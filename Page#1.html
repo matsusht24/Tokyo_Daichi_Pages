@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東京第一クリニック - オンライン問診</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
+    <!-- Added Noto Sans JP Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+        rel="stylesheet" />
+    <link href="./style/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="top-box">
+        <div class="clinic-header">
+            <div class="container">
+                <div class="align-items-center main-header-box">
+                    <div>
+                        <img class="head-img" src="./images/header.svg" />
+                    </div>
+                    <div class="d-flex justify-content-end gap-3">
+                        <div class="show-button">
+                            <button class="btn-online">オンライン診療</button>
+                        </div>
+                        <button class="btn-menu">
+                            メニュー
+                            <img src="./images/navigation.svg" />
+                        </button>
+                    </div>
+                </div>
+                <div class="header-bottom-button">
+                    <button class="btn-online">オンライン診療</button>
+                </div>
+                <div class="form-header">
+                    <div class="form-title">
+                        オンライン診療
+                    </div>
+                    <div class="form-below-line"></div>
+                    <div class="form-title-b">問診票</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <!-- Main Form -->
+                <div class="col-lg-8">
+                    <div>
+                        <!-- Start Form -->
+                        <form id="medical-form" class="form-container">
+                            <!-- Question 1 -->
+                            <div class="main-question-box">
+                                <div class="question-section">
+                                    最後の受診以降（初診の方は過去に）大きな病気を患った。「はい」とご回答の方は病名と発症日をお答えください。
+                                </div>
+                                <div class="answer-section">
+                                    <div class="question-button-group">
+                                        <div class="question-button-single-box">
+                                            <input type="radio" id="illness-yes" name="big-illness" value="yes"
+                                                class="hidden-radio" />
+                                            <label for="illness-yes" class="question-button-box">はい</label>
+                                        </div>
+                                        <div class="question-button-single-box">
+                                            <input type="radio" id="illness-no" name="big-illness" value="no"
+                                                class="hidden-radio" />
+                                            <label for="illness-no" class="question-button-box">いいえ</label>
+                                        </div>
+                                    </div>
+                                    <div class="question-text-area">
+                                        <p>
+                                            「はい」とご回答の方は病名と発症日をお答えください。
+                                        </p>
+                                        <textarea name="illness-detail" class="question-input" placeholder="こちらにご入力ください"
+                                            rows="1"></textarea>
+                                    </div>
+                                    <div class="answer-section-divider"></div>
+                                </div>
+                            </div>
+
+                            <!-- Question 2 -->
+                            <div class="main-question-box">
+                                <div class="question-section">
+                                    最後の受診以降（初診の方は過去に）大きな手術をした。
+                                </div>
+                                <div class="answer-section">
+                                    <div class="question-button-group">
+                                        <div class="question-button-single-box">
+                                            <input type="radio" id="surgery-yes" name="big-surgery" value="yes"
+                                                class="hidden-radio" />
+                                            <label for="surgery-yes" class="question-button-box">はい</label>
+                                        </div>
+                                        <div class="question-button-single-box">
+                                            <input type="radio" id="surgery-no" name="big-surgery" value="no"
+                                                class="hidden-radio" />
+                                            <label for="surgery-no" class="question-button-box">いいえ</label>
+                                        </div>
+                                    </div>
+                                    <div class="question-text-area">
+                                        <p>
+                                            「はい」とご回答の方は病名と発症日をお答えください。
+                                        </p>
+                                        <textarea name="illness-detail" class="question-input" rows="1"
+                                            placeholder="こちらにご入力ください"></textarea>
+                                    </div>
+                                    <div class="answer-section-divider"></div>
+                                </div>
+                            </div>
+
+                            <!-- Question 3 -->
+                            <div class="main-question-box">
+                                <div class="question-section">
+                                    現在使用しているお薬を全てご記入ください。（目薬を含む）
+                                </div>
+                                <div class="answer-section">
+                                    <div class="question-text-area">
+                                        <p>
+                                            前回ご入力いただいたお薬を自動入力しています。相違がある場合は必ず修正をお願いします。<br />
+                                            <span style="
+                            color: #666666;
+                            font-size: 12px;
+                            line-height: 16px;
+                          ">
+                                                例）カンデサルタン、アムロジピン、エナラプリルマレイン酸塩、ロサルタンカリウム、アロプリノール、グリメピリド、メトホルミン塩酸塩等々・・・
+                                            </span>
+                                        </p>
+                                        <textarea name="illness-detail" class="question-input" rows="1"
+                                            placeholder="こちらにご入力ください"></textarea>
+                                    </div>
+                                    <div class="answer-section-divider"></div>
+                                </div>
+                            </div>
+
+                            <!-- Question 4 -->
+                            <div class="main-question-box">
+                                <div class="question-section">
+                                    最後の受診以降（初診の方は過去に）大きな手術をした。
+                                </div>
+                                <div class="answer-section">
+                                    <div class="question-button-group">
+                                        <div class="question-button-single-box">
+                                            <input type="radio" id="operation-yes" name="operation" value="yes"
+                                                class="hidden-radio" />
+                                            <label for="operation-yes" class="question-button-box">はい</label>
+                                        </div>
+                                        <div class="question-button-single-box">
+                                            <input type="radio" id="operation-no" name="operation" value="no"
+                                                class="hidden-radio" />
+                                            <label for="operation-no" class="question-button-box">いいえ</label>
+                                        </div>
+                                    </div>
+                                    <div class="question-text-area">
+                                        <p>
+                                            「はい」とご回答の方は病名と発症日をお答えください。
+                                        </p>
+                                        <textarea name="illness-detail" class="question-input" rows="1"
+                                            placeholder="こちらにご入力ください"></textarea>
+                                    </div>
+                                    <div class="answer-section-divider"></div>
+
+                                    <div class="question-checkbox">
+                                        <input type="checkbox" id="confirm-self" name="confirm-self" />
+                                        <label for="confirm-self">患者本人で間違いありません</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Terms Section -->
+                            <div class="main-question-box">
+                                <div class="question-section">
+                                    「オンライン処方ご利用規約」をお読み<br />いただいた上で「利用規約に同意する」<br />にチェックしてください。
+                                    (*)
+                                </div>
+                                <div class="answer-section">
+                                    <div class="question-text-area">
+                                        <p class="question-text-area-p">
+                                            オンライン処方ご利用規約
+                                        </p>
+                                    </div>
+
+                                    <div class="question-checkbox">
+                                        <input type="checkbox" id="agree-terms" name="agree-terms" required />
+                                        <label for="agree-terms">利用規約に同意する</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <div class="text-center">
+                                <button type="submit" class="submit-btn">
+                                    登録情報を保存する
+                                </button>
+                            </div>
+                        </form>
+
+                        <!-- Footer Links -->
+                    </div>
+                </div>
+
+                <!-- Sidebar -->
+                <div class="col-lg-4 left-side-box">
+                    <div class="sidebar">
+                        <div class="sidebar-header">ご利用ガイド・インストラクション</div>
+                        <div class="sidebar-text-area">
+                            <p>ご利用方法をこちらにご記入ください。</p>
+                            <p>ご利用方法をこちらにご記入ください。</p>
+                            <p>ご利用方法をこちらにご記入ください。</p>
+                            <p>ご利用方法をこちらにご記入ください。</p>
+                            <p>ご利用方法をこちらにご記入ください。</p>
+                            <p>ご利用方法をこちらにご記入ください。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer -->
+        </div>
+    </div>
+    <div class="footer-box">
+        <div class="container">
+            <div class="footer-links">
+                <a href="#">当院について</a> | <a href="#">診療メニュー</a> |
+                <a href="#">診療</a> | <a href="#">院長紹介</a> |
+                <a href="#">診療時間</a> | <a href="#">よくあるご質問</a> |
+                <a href="#">診察</a> | <a href="#">地図・アクセス</a> |
+                <a href="#">ログイン</a> | <a href="#">問診票ダウンロード</a> |
+                <a href="#">よくあるご質問</a> | <a href="#">お問合わせ</a> |
+                <a href="#">医療機器</a> | <a href="#">運営体制</a> |
+                <a href="#">診療科</a> |
+                <a href="#">サイトマップ</a>
+            </div>
+            <div class="copyright">
+                Copyright © 2025 東京第一クリニック All Rights Reserved.
+            </div>
+            <div class="bottom-buttons-box">
+                <button class="bottom-buttons">料金表・診療時間</button>
+                <button class="bottom-buttons">郵送処方</button>
+                <button class="bottom-buttons">アクセス ・TEL</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function autoResizeTextarea(textarea) {
+            textarea.style.height = "auto";
+            const minHeight = 24;
+            const newHeight = Math.max(textarea.scrollHeight, minHeight);
+
+            textarea.style.height = newHeight + "px";
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const textareas = document.querySelectorAll(".question-input");
+
+            textareas.forEach(function (textarea) {
+                autoResizeTextarea(textarea);
+                textarea.addEventListener("input", function () {
+                    autoResizeTextarea(this);
+                });
+                textarea.addEventListener("paste", function () {
+                    setTimeout(() => {
+                        autoResizeTextarea(this);
+                    }, 10);
+                });
+                textarea.addEventListener("keydown", function (e) {
+                    if (e.key === "Backspace" || e.key === "Delete") {
+                        setTimeout(() => {
+                            autoResizeTextarea(this);
+                        }, 10);
+                    }
+                });
+                textarea.addEventListener("cut", function () {
+                    setTimeout(() => {
+                        autoResizeTextarea(this);
+                    }, 10);
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

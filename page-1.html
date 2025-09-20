@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東京第一クリニック - オンライン問診</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Added Noto Sans JP Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style/page-1.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <div class="top-box">
+      <div class="clinic-header">
+        <div class="container">
+          <div class="align-items-center main-header-box">
+            <div>
+              <img class="head-img" src="./images/header.svg" />
+            </div>
+            <div class="d-flex justify-content-end gap-3">
+              <div class="show-button">
+                <button class="btn-online">オンライン診療</button>
+              </div>
+              <button class="btn-menu">
+                メニュー
+                <img src="./images/navigation.png" />
+              </button>
+            </div>
+          </div>
+          <div class="header-bottom-button">
+            <button class="btn-online">オンライン診療</button>
+          </div>
+          <div class="form-header">
+            <div class="form-title">オンライン診療</div>
+            <div class="form-below-line"></div>
+            <div class="form-title-b">オンライン診療ログイン(初診可)</div>
+            <div class="form-subtitle">
+              【ご確認事項】<br />
+              ◆ご利用いただけるのは20歳以上の男性のみです。<br />
+              ※代理での処方はできません。必ず服用するご本人が登録を行って下さい。
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Content -->
+      <div class="step-info">
+        <div class="container">
+          <div class="step-header">現在のステップ</div>
+          <div class="step-box">
+            <div class="step-single-box current">
+              <div class="step-line"></div>
+              <div class="step-text">登録</div>
+            </div>
+            <div class="step-single-box">
+              <div class="step-line"></div>
+              <div class="step-text">編集</div>
+            </div>
+            <div class="step-single-box">
+              <div class="step-line"></div>
+              <div class="step-text">予約</div>
+            </div>
+            <div class="step-single-box">
+              <div class="step-line"></div>
+              <div class="step-text">診察</div>
+            </div>
+            <div class="step-single-box">
+              <div class="step-line"></div>
+              <div class="step-text">処方</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row">
+          <!-- Main Form -->
+          <div class="col-lg-8">
+            <div>
+              <!-- Start Form -->
+              <form id="login-form" class="login-form">
+                <!-- Login -->
+                <div class="main-question-box">
+                  <div class="login-section">
+                    <img class="login-img" src="./images/login.png" />
+                    <div class="login-title">オンライン診療にログインする</div>
+                    <div class="login-subtitle">
+                      アカウント登録がお済みの方は
+                      下記よりログインしてください。<br />(同じ電話番号で複数のアカウントを登録されている方は
+                      メールアドレスでログインしてください)
+                    </div>
+                  </div>
+                </div>
+                <div class="answer-section">
+                  <div class="login-input">
+                    <div class="email-section">
+                      <div class="email-input-section">
+                        <label for="email-id" class="email-label"
+                          >メールアドレスまたは電話番号</label
+                        >
+                        <input
+                          type="text"
+                          class="email-input"
+                          id="email-id"
+                          name="email-id"
+                          placeholder="ここに入力してください"
+                          required
+                        />
+                        <div class="login-line"></div>
+                      </div>
+                      <div class="email-subtitle">
+                        ※電話番号入力の際はハイフン入れず数字のみ
+                      </div>
+                    </div>
+
+                    <div class="password-section">
+                      <label for="password" class="password-label"
+                        >パスワード</label
+                      >
+                      <input
+                        type="password"
+                        class="question-input"
+                        id="password"
+                        name="password"
+                        placeholder="パスワード"
+                        required
+                      />
+                      <div class="login-line"></div>
+
+                      <input
+                        type="checkbox"
+                        id="remember-password"
+                        onclick="togglePassword()"
+                      />
+                      <label for="remember-password"
+                        >パスワードを記憶する</label
+                      >
+                    </div>
+                  </div>
+                  <!-- Submit Button -->
+                  <div class="text-center">
+                    <button type="submit" class="submit-btn">
+                      ログインする
+                    </button>
+                  </div>
+                  <div class="text-center">
+                    <button type="button" class="submit-btn">
+                      パスワードをお忘れの方
+                    </button>
+                  </div>
+                  <div class="text-center">
+                    <div class="first-time-label">★はじめてご利用の方★</div>
+                    <button type="button" class="submit-btn">
+                      新規アカウント登録
+                    </button>
+                  </div>
+                </div>
+              </form>
+              <!-- End Form -->
+
+              <!-- Footer Links -->
+            </div>
+            <!-- Add to Homescreen -->
+            <div class="col-lg">
+              <div class="question-section">
+                <div class="question-header">
+                  ※iPhone・iPadの場合は 共有マークをタップし「ホーム画面に追加」を選択してください。
+                </div>
+                <div class="add-home-section">
+                  <div class="text-center">
+                    <button type="button" class="submit-btn">
+                      ホーム画面に追加
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Add to Homescreen -->
+            <!-- Related Links -->
+            <div class="col-lg">
+              <div class="question-section">
+                <div class="question-header">関連リンク</div>
+                <div class="related-links-section">
+                  <div class="text-center">
+                    <div class="first-time-label">公式サイトに戻る</div>
+                    <button type="button" class="submit-btn">
+                      公式サイトに戻る
+                    </button>
+                  </div>
+                  <div class="text-center">
+                    <div class="first-time-label">よくあるご質問</div>
+                    <button type="button" class="submit-btn">
+                      よくあるご質問
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End Related Links -->
+          </div>
+
+          <!-- Sidebar -->
+          <div class="col-lg-4 left-side-box">
+            <div class="sidebar">
+              <div class="sidebar-header">ご利用ガイド・インストラクション</div>
+              <div class="sidebar-text-area">
+                <p>ご利用方法をこちらにご記入ください。</p>
+                <p>ご利用方法をこちらにご記入ください。</p>
+                <p>ご利用方法をこちらにご記入ください。</p>
+                <p>ご利用方法をこちらにご記入ください。</p>
+                <p>ご利用方法をこちらにご記入ください。</p>
+                <p>ご利用方法をこちらにご記入ください。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer -->
+      </div>
+    </div>
+    <div class="footer-box">
+      <div class="container">
+        <div class="footer-links">
+          <a href="#">当院について</a> | <a href="#">診療メニュー</a> |
+          <a href="#">診療</a> | <a href="#">院長紹介</a> |
+          <a href="#">診療時間</a> | <a href="#">よくあるご質問</a> |
+          <a href="#">診察</a> | <a href="#">地図・アクセス</a> |
+          <a href="#">ログイン</a> | <a href="#">問診票ダウンロード</a> |
+          <a href="#">よくあるご質問</a> | <a href="#">お問合わせ</a> |
+          <a href="#">医療機器</a> | <a href="#">運営体制</a> |
+          <a href="#">診療科</a> |
+          <a href="#">サイトマップ</a>
+        </div>
+        <div class="copyright">
+          Copyright © 2025 東京第一クリニック All Rights Reserved.
+        </div>
+        <div class="bottom-buttons-box">
+          <button class="bottom-buttons">料金表・診療時間</button>
+          <button class="bottom-buttons">郵送処方</button>
+          <button class="bottom-buttons">アクセス ・TEL</button>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function autoResizeTextarea(textarea) {
+        textarea.style.height = "auto";
+        const minHeight = 24;
+        const newHeight = Math.max(textarea.scrollHeight, minHeight);
+
+        textarea.style.height = newHeight + "px";
+      }
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const textareas = document.querySelectorAll(".question-input");
+
+        textareas.forEach(function (textarea) {
+          autoResizeTextarea(textarea);
+          textarea.addEventListener("input", function () {
+            autoResizeTextarea(this);
+          });
+          textarea.addEventListener("paste", function () {
+            setTimeout(() => {
+              autoResizeTextarea(this);
+            }, 10);
+          });
+          textarea.addEventListener("keydown", function (e) {
+            if (e.key === "Backspace" || e.key === "Delete") {
+              setTimeout(() => {
+                autoResizeTextarea(this);
+              }, 10);
+            }
+          });
+          textarea.addEventListener("cut", function () {
+            setTimeout(() => {
+              autoResizeTextarea(this);
+            }, 10);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

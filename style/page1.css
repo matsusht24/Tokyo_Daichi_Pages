@@ -1,0 +1,73 @@
+/* page1.css */
+
+/* Global Styles */
+.text-main {
+    color: #D32F2F;
+}
+
+.body,
+header,
+footer {
+  font-family: "Noto Sans JP", sans-serif;
+  color: #2c3237;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+
+/* Header Buttons */
+
+.btn-online {
+  background-color: #c62828;
+  color: white;
+  border: none;
+  /* padding: 10px 15px; */
+  height: 36px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.btn-online:hover {
+  background-color: #b71c1c;
+}
+
+.btn-menu {
+  background-color: white;
+  color: #c62828;
+  border: 1px solid #c62828;
+  padding: 0px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 24px;
+  border-radius: 4px;
+  height: 36px;
+
+  cursor: pointer;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+.btn-menu:active {
+  background-color: white;
+  color: #c62828;
+  border: 1px solid #c62828;
+}
+
+/* Header Card */
+.header-card {
+  background-color: #fff2f2;
+  border: 1px solid #d32f2f;
+  border-radius: 5px;
+}
+
+.header-line {
+  border: 0.1px solid #2c3237;
+  margin-top: 10px;
+}

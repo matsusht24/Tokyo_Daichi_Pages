@@ -261,7 +261,6 @@
                   <label for="birth-year" class="form-label">年</label>
                   <select class="form-select" id="birth-year" required>
                     <option value="" selected disabled>年</option>
-              
                   </select>
                   <div class="input-line"></div>
                 </div>
@@ -269,7 +268,6 @@
                   <label for="birth-month" class="form-label">月</label>
                   <select class="form-select" id="birth-month" required>
                     <option value="" selected disabled>月</option>
-                
                   </select>
                   <div class="input-line"></div>
                 </div>
@@ -277,13 +275,192 @@
                   <label for="birth-day" class="form-label">日</label>
                   <select class="form-select" id="birth-day" required>
                     <option value="" selected disabled>日</option>
-                  
                   </select>
                   <div class="input-line"></div>
                 </div>
               </div>
             </div>
             <!-- End of Question 5 -->
+            <!-- Question 6 -->
+            <div class="d-flex-col flex-column red-border">
+              <div class="red-card fw-bold px-3 py-2">住所をご入力ください</div>
+
+              <div class="d-flex gap-1 px-3 py-2">
+                <div class="d-flex flex-column flex-fill">
+                  <label for="postal-code" class="form-label"
+                    >郵便番号 <span class="text-danger">(必須)</span></label
+                  >
+                  <input
+                    type="text"
+                    placeholder=""
+                    class="form-control"
+                    required
+                  />
+                  <div class="input-line"></div>
+                </div>
+                <div class="d-flex flex-column flex-fill">
+                  <label for="postal-code-2" class="form-label"><br /></label>
+                  <input
+                    type="text"
+                    id="postal-code-2"
+                    class="form-control"
+                    required
+                  />
+                  <div class="input-line"></div>
+                </div>
+              </div>
+              <div class="d-flex flex-column px-3 py-2">
+                <label for="prefecture" class="form-label"
+                  >都道府県 <span class="text-danger">(必須)</span> </label
+                >
+                <select class="form-select" id="birth-month" required>
+                  <option value="" selected disabled>未選択</option>
+                </select>
+                <div class="input-line"></div>
+              </div>
+              <div class="d-flex flex-column px-3 py-2">
+                <label for="city" class="form-label"
+                  >市町村区 <span class="text-danger">(必須)</span></label
+                >
+                <input
+                  type="text"
+                  id="city"
+                  class="form-control"
+                  placeholder="ここに入力してください"
+                  required
+                />
+                <div class="input-line"></div>
+              </div>
+              <div class="d-flex flex-column px-3 py-2">
+                <label for="town" class="form-label"
+                  >町域 <span class="text-danger">(必須)</span></label
+                >
+                <input
+                  type="text"
+                  id="town"
+                  class="form-control"
+                  placeholder="ここに入力してください"
+                  required
+                />
+                <div class="input-line"></div>
+              </div>
+              <div class="d-flex flex-column px-3 py-2">
+                <label for="address" class="form-label"
+                  >番地 <span class="text-danger">(必須)</span></label
+                >
+                <input
+                  type="text"
+                  id="address"
+                  class="form-control"
+                  placeholder="ここに入力してください"
+                  required
+                />
+                <div class="input-line"></div>
+              </div>
+              <div class="d-flex flex-column px-3 py-2 mb-2">
+                <label for="building-name" class="form-label"
+                  >建物名・部屋番号等</label
+                >
+                <input
+                  type="text"
+                  id="building-name"
+                  class="form-control"
+                  placeholder="ここに入力してください"
+                />
+                <div class="input-line"></div>
+              </div>
+            </div>
+            <!-- End of Question 6-->
+            <!-- Question 7 -->
+            <div class="d-flex-col flex-column red-border">
+              <div class="red-card fw-bold px-3 py-2">
+                電話番号をご入力ください。
+              </div>
+              <div class="d-flex flex-column px-3 py-2">
+                <label for="tel-phone" class="form-label"
+                  >電話番号 <span class="text-danger">(必須)</span></label
+                >
+                <input
+                  type="text"
+                  id="tel-phone"
+                  class="form-control"
+                  placeholder="ここに入力してください"
+                  required
+                />
+                <div class="input-line"></div>
+              </div>
+              <div class="d-flex flex-column px-3 py-2">
+                <label for="confirm-phone" class="form-label"
+                  >電話番号再入力 <span class="text-danger">(必須)</span></label
+                >
+                <input
+                  type="text"
+                  id="confirm-phone"
+                  class="form-control"
+                  placeholder="ここに入力してください"
+                  required
+                />
+                <div class="input-line"></div>
+              </div>
+              <div class="form-text text-md-center px-3 py-2 mb-2">
+                ※電話番号はハイフンなしでご記入ください。この電話番号は診察予約時間帯に当院から電話を掛けさせていただき、ドクターとの問診の際に使用いたしますので携帯電話番号を推奨しています。
+              </div>
+            </div>
+            <!-- End of Question 7-->
+            <!-- Question 8 -->
+            <div class="d-flex-col flex-column red-border">
+              <div class="red-card fw-bold px-3 py-2">
+                再診の方はカルテ番号をご入力ください。
+                「初診の方」・「カルテ番号をお忘れの方」はカルテ番号は未記入のままお進みください。
+              </div>
+              <div class="d-flex flex-column px-3 py-2">
+                <label for="phone" class="form-label">カルテ番号 </label>
+                <input
+                  type="text"
+                  id="phone"
+                  class="form-control"
+                  placeholder="ここに入力してください"
+                />
+                <div class="input-line"></div>
+              </div>
+            </div>
+            <!-- End of Question 8 -->
+             <!-- Question 9 -->
+            <div class="d-flex-col flex-column red-border">
+              <div class="red-card fw-bold px-3 py-2">
+                再診の方は受診された医院を、初診の方はお好きな医院をご選択ください (必須)
+              </div>
+              <div class="d-flex flex-column px-3 py-2">
+                <label for="prefecture" class="form-label"
+                  >選択してください</label
+                >
+                <select class="form-select" id="birth-month" required >
+                  <option value="" selected disabled>お選びください</option>
+                </select>
+                <div class="input-line"></div>
+              </div>
+            </div>
+            <!-- End of Question 9 -->
+             <!-- Question 10 -->
+              <div class="d-flex-col flex-column red-border">
+              <div class="red-card fw-bold px-3 py-2">
+                「オンライン処方ご利用規約」をお読みいただいた上で「利用規約に同意する」にチェックしてください。 (必須)
+              </div>
+              <div class="d-flex flex-column px-3 py-2">
+                <a href="#" class="text-main text-center">オンライン処方ご利用規約</a>
+                <div class="d-flex gap-2">
+                  <input type="checkbox" id="read-terms">
+                  <label for="read-terms" class="form-label">利用規約に同意する</label>
+                </div>
+              </div>
+            </div>
+            <!-- End of Question 10-->
+            <!-- Sumbit Button -->
+            <div class="d-md-flex justify-content-md-center">
+                  <button class="btn-prim w-md-auto" type="submit">
+                    送信する
+                  </button>
+              </div>
           </form>
           <!-- Sidebar-->
           <div class="col-lg-4 d-none d-lg-block">
@@ -308,7 +485,7 @@
     </main>
     <!-- Sript to generate days, months, and years -->
     <script>
-      // generate the days 
+      // generate the days
       const daySelect = document.getElementById("birth-day");
 
       for (let i = 1; i <= 31; i++) {
@@ -318,7 +495,7 @@
         daySelect.appendChild(opt);
       }
 
-      //generate months 
+      //generate months
       const monthSelect = document.getElementById("birth-month");
 
       for (let i = 1; i <= 31; i++) {
@@ -326,7 +503,6 @@
         opt.value = i;
         opt.textContent = i;
         monthSelect.appendChild(opt);
-
       }
 
       // generate years

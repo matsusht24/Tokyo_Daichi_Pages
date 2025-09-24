@@ -1,0 +1,16 @@
+Card Component
+
+- <!-- ========== Start Section ========== -->
+<div class="d-flex-col flex-column my-4 red-border">
+              <div class="red-card fw-bold px-3 py-2">
+                ※iPhone・iPadの場合は 共有マークをタップし「ホーム画面に追加」を選択してください。
+              </div>
+              <div class="container d-md-flex justify-content-md-center">
+                <button type="button" class="btn-prim w-md-auto mb-3">
+                  ホーム画面に追加
+                </button>
+              </div>
+            </div>
+<!-- ========== End Section ========== -->
+
+css

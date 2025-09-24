@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東京第一クリニック - オンライン問診</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Added Noto Sans JP Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style/page2.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="./images/header.svg" alt="Tokyo First Clinic Logo" />
+          </a>
+          <div class="d-flex justify-content-end gap-3">
+            <button class="btn-online d-none d-sm-block">オンライン診療</button>
+
+            <button class="btn-menu">
+              メニュー
+              <img src="./images/navigation.png" />
+            </button>
+          </div>
+          <div class="d-flex justify-content-center d-sm-none w-100 mt-3">
+            <button class="btn-online">オンライン診療</button>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="d-flex-col my-4 header-card py-2 px-3">
+          <div class="fw-semibold py-1">オンライン処方</div>
+          <div class="header-line"></div>
+          <div class="fw-bold fs-5 py-1">新規アカウント登録（初診可）</div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content Section -->
+    <main class="container">
+      <!--Step Section-->
+      <div class="container d-sm-none">
+        <div class="d-flex-col black-border">
+          <div class="fw-bold text-center text-white bg-dark p-2">
+            現在のステップ
+          </div>
+          <div class="d-flex justify-content-between px-2 py-2 gap-1 mt-2">
+            <a href="#" class="step-item current" aria-selected="true">
+              <div class="step-line"></div>
+              登録</a
+            >
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              編集</a
+            >
+
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              予約</a
+            >
+
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              診察</a
+            >
+
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              処方</a
+            >
+
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              登録</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Form Section -->
+      <div class="container my-4">
+        <div class="row">
+          <form class="form-container col-lg-8 d-flex flex-column gap-3">
+            <!-- Question 1-->
+            <div class="d-flex-col flex-column red-border">
+              <div class="red-card fw-bold px-3 py-2">
+                浜松町第一クリニックグループへの来院歴はありますか？ (必須)
+              </div>
+              <div class="container">
+                <div class="d-flex justify-content-center gap-2 p-2 my-1">
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="visit-yes"
+                      name="have-visit"
+                      class="hidden-radio d-none"
+                    />
+                    <label
+                      for="visit-yes"
+                      class="question-button-box w-md-auto"
+                    >
+                      はい</label
+                    >
+                  </div>
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="visit-no"
+                      name="have-visit"
+                      class="hidden-radio d-none"
+                    />
+                    <label for="visit-no" class="question-button-box w-md-auto">
+                      いいえ</label
+                    >
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="form-text text-md-center my-2">
+                    ※「いいえ」とご回答の方は、下部に表示される「初診用問診票」に必ずご回答ください。
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Question 1-->
+            <!-- Question 2 -->
+            <div class="d-flex-col flex-column red-border">
+              <div class="red-card fw-bold px-3 py-2">
+                ご本人確認をお願いします。 (必須)
+              </div>
+              <div class="d-flex gap-3 align-items-center p-2">
+                <input type="checkbox" id="verify-id" class="" />
+                <label for="verify-id" class="form-label"
+                  >患者本人かつ20歳以上の男性で間違いありません</label
+                >
+              </div>
+            </div>
+            <!-- Question 2 -->
+
+            <div class="d-flex-col flex-column red-border gap-1">
+              <div class="d-flex flex-column fw-bold px-3 py-2 red-card gap-2">
+                <div class="title">
+                  登録されたメールアドレスと一緒にパス<br />ワードを入力してください。
+                </div>
+                <div class="id">souga.idenbrid@gmail.com</div>
+              </div>
+              <div class="row">
+                <div class="col-12 col-lg-6">
+                  <div class="d-flex flex-column gap-1 px-3 py-2">
+                    <label for="password" class="form-label"
+                      >パスワード<span class="text-danger">(必須)</span></label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="パスワード"
+                      ）required
+                    />
+                    <div class="input-line"></div>
+                  </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                  <div class="d-flex flex-column gap-1 px-3 py-2 mb-2">
+                    <label for="password" class="form-label"
+                      >パスワード再入力<span class="text-danger"
+                        >(必須)</span
+                      ></label
+                    >
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="password"
+                      placeholder="パスワード"
+                      ）required
+                    />
+                    <div class="input-line"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Question 2-->
+
+            <!-- Question 3 -->
+            <div class="d-flex-col flex-column red-border">
+              <div class="red-card fw-bold px-3 py-2">氏名 (必須)</div>
+              <div class="d-flex gap-1 px-3 py-2">
+                <div class="d-flex flex-column flex-fill">
+                  <label for="last-name" class="form-label">姓</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    placeholder="姓"
+                    class="form-control"
+                    required
+                  />
+                  <div class="input-line"></div>
+                </div>
+                <div class="d-flex flex-column flex-fill">
+                  <label for="first-name" class="form-label">名</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    placeholder="名"
+                    class="form-control"
+                    required
+                  />
+                  <div class="input-line"></div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Question 3-->
+
+            <!-- Question 4 -->
+            <div class="d-flex-col flex-column red-border">
+              <div class="red-card fw-bold px-3 py-2">ふりがな (必須)</div>
+              <div class="d-flex gap-1 px-3 py-2">
+                <div class="d-flex flex-column flex-fill">
+                  <label for="last-furigana" class="form-label">せい</label>
+                  <input
+                    type="text"
+                    id="last-furigana"
+                    placeholder="せい"
+                    class="form-control"
+                    required
+                  />
+                  <div class="input-line"></div>
+                </div>
+                <div class="d-flex flex-column flex-fill">
+                  <label for="first-furigana" class="form-label">めい</label>
+                  <input
+                    type="text"
+                    id="first-furigana"
+                    placeholder="めい"
+                    class="form-control"
+                    required
+                  />
+                  <div class="input-line"></div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Question 4 -->
+            <!-- Question 5 -->
+            <div class="d-flex-col flex-column red-border">
+              <div class="red-card fw-bold px-3 py-2">生年月日 (必須)</div>
+              <div class="d-flex gap-1 px-3 py-2">
+                <div class="d-flex flex-column flex-fill">
+                  <label for="birth-year" class="form-label">年</label>
+                  <select class="form-select" id="birth-year" required>
+                    <option value="" selected disabled>年</option>
+              
+                  </select>
+                  <div class="input-line"></div>
+                </div>
+                <div class="d-flex flex-column flex-fill">
+                  <label for="birth-month" class="form-label">月</label>
+                  <select class="form-select" id="birth-month" required>
+                    <option value="" selected disabled>月</option>
+                
+                  </select>
+                  <div class="input-line"></div>
+                </div>
+                <div class="d-flex flex-column flex-fill">
+                  <label for="birth-day" class="form-label">日</label>
+                  <select class="form-select" id="birth-day" required>
+                    <option value="" selected disabled>日</option>
+                  
+                  </select>
+                  <div class="input-line"></div>
+                </div>
+              </div>
+            </div>
+            <!-- End of Question 5 -->
+          </form>
+          <!-- Sidebar-->
+          <div class="col-lg-4 d-none d-lg-block">
+            <aside>
+              <div class="sidebar">
+                <div class="sidebar-header">
+                  ご利用ガイド・インストラクション
+                </div>
+                <div class="sidebar-text-area">
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Sript to generate days, months, and years -->
+    <script>
+      // generate the days 
+      const daySelect = document.getElementById("birth-day");
+
+      for (let i = 1; i <= 31; i++) {
+        const opt = document.createElement("option");
+        opt.value = i;
+        opt.textContent = i;
+        daySelect.appendChild(opt);
+      }
+
+      //generate months 
+      const monthSelect = document.getElementById("birth-month");
+
+      for (let i = 1; i <= 31; i++) {
+        const opt = document.createElement("option");
+        opt.value = i;
+        opt.textContent = i;
+        monthSelect.appendChild(opt);
+
+      }
+
+      // generate years
+      const yearSelect = document.getElementById("birth-year");
+
+      for (let i = 2025; i >= 1900; i--) {
+        const opt = document.createElement("option");
+        opt.value = i;
+        opt.textContent = i;
+        yearSelect.appendChild(opt);
+      }
+    </script>
+  </body>
+  <footer>
+    <div class="footer-box">
+      <div class="container">
+        <div class="footer-links d-none d-sm-block">
+          <a href="#">当院について</a> | <a href="#">診療メニュー</a> |
+          <a href="#">診療</a> | <a href="#">院長紹介</a> |
+          <a href="#">診療時間</a> | <a href="#">よくあるご質問</a> |
+          <a href="#">診察</a> | <a href="#">地図・アクセス</a> |
+          <a href="#">ログイン</a> | <a href="#">問診票ダウンロード</a> |
+          <a href="#">よくあるご質問</a> | <a href="#">お問合わせ</a> |
+          <a href="#">医療機器</a> | <a href="#">運営体制</a> |
+          <a href="#">診療科</a> |
+          <a href="#">サイトマップ</a>
+        </div>
+        <div class="copyright">
+          Copyright © 2025 東京第一クリニック All Rights Reserved.
+        </div>
+        <div class="d-none d-sm-block">
+          <button class="bottom-buttons">料金表・診療時間</button>
+          <button class="bottom-buttons">郵送処方</button>
+          <button class="bottom-buttons">アクセス ・TEL</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link href="./style/page1.css" rel="stylesheet" />
+    <link href="./style/page-universal.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header Section -->
@@ -45,14 +45,9 @@
       </nav>
       <div class="container">
         <div class="d-flex-col my-4 header-card py-2 px-3">
-          <div class="fw-semibold py-1">オンライン診療</div>
+          <div class="fw-semibold py-1">オンライン処方</div>
           <div class="header-line"></div>
-          <div class="fw-bold fs-5 py-1">オンライン診療ログイン(初診可)</div>
-          <div class="text-main py-1">
-            【ご確認事項】<br />
-            ◆ご利用いただけるのは20歳以上の男性のみです。<br />
-            ※代理での処方はできません。必ず服用するご本人が登録を行って下さい。
-          </div>
+          <div class="fw-bold fs-5 py-1">パスワード再登録</div>
         </div>
       </div>
     </header>
@@ -96,120 +91,29 @@
           </div>
         </div>
       </div>
-      <!-- Form Section -->
+      <!-- Success Section -->
       <div class="container my-4">
         <div class="row">
-          <div class="col-lg-8 d-flex-col gap-2">
-            <form id="login-form" class="d-flex-col red-border" novalidate>
-              <!-- Login Header -->
-              <div
-                class="d-flex flex-column align-items-center red-card px-2 py-3 gap-2"
-              >
-                <img
-                  src="./images/login.png"
-                  alt="login img"
-                  width="95"
-                  height="95"
-                />
-                <div class="fw-bold">オンライン診療にログインする</div>
-                <div class="px-4 text-sm-center">
-                  アカウント登録がお済みの方は 下記よりログインしてください。<br />(同じ電話番号で複数のアカウントを登録されている方は
-                  メールアドレスでログインしてください)
-                </div>
+          <div class="col-lg-8 d-flex flex-column gap-2">
+            <div
+              class="d-flex flex-column header-card py-2 px-3 align-items-center gap-2 pt-5"
+            >
+              <img
+                src="./images/success.svg"
+                alt="success icon"
+                width="95"
+                height="95"
+              />
+              <div class="text-main fw-bold text-center fs-6">
+                パスワードを変更しました
               </div>
-              <!-- Input Section -->
-              <div class="d-flex flex-column gap-3 my-4 px-2">
-                <div class="d-flex flex-column gap-1">
-                  <label for="email" class="form-label"
-                    >メールアドレスまたは電話番号</label
-                  >
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    placeholder="ここに入力してください"
-                    ）required
-                  />
-                  <div class="input-line"></div>
-                  <div class="form-text">
-                    ※メールアドレスまたは電話番号を入力してください
-                  </div>
-                </div>
-                <div class="d-flex flex-column gap-1">
-                  <label for="password" class="form-label">パスワード</label>
-                  <input
-                    type="password"
-                    class="form-control"
-                    id="password"
-                    placeholder="パスワード"
-                    ）required
-                  />
-                  <div class="input-line"></div>
-                  <div class="d-md-flex justify-content-md-center">
-                    <div class="d-flex flex-row gap-2">
-                      <input
-                        type="checkbox"
-                        id="remember-password"
-                        onclick="togglePassword()"
-                      />
-                      <label for="remember-password" class="form-label"
-                        >パスワードを記憶する</label
-                      >
-                    </div>
-                  </div>
-                </div>
-                <div class="d-md-flex justify-content-md-center">
-                  <button class="btn-prim w-md-auto" type="submit">
-                    ログインする
-                  </button>
-                </div>
-                <div class="d-md-flex justify-content-md-center">
-                  <button type="button" class="btn-prim w-md-auto">
-                    パスワードをお忘れの方
-                  </button>
-                </div>
-
-                <div class="text-center">
-                  <div class="fw-bold text-main">★はじめてご利用の方★</div>
-                  <button type="button" class="btn-prim w-md-auto">
-                    新規アカウント登録
-                  </button>
-                </div>
-              </div>
-              .
-            </form>
-            <!-- Add to Homescreen section-->
-            <div class="d-flex-col flex-column my-4 red-border">
-              <div class="red-card fw-bold px-3 py-2">
-                ※iPhone・iPadの場合は 共有マークをタップし「ホーム画面に追加」を選択してください。
+              <div class="text-main">
+                トップページよりご登録のメールアドレスおよび新しいパスワードにてログインしてください
               </div>
               <div class="container d-md-flex justify-content-md-center">
                 <button type="button" class="btn-prim w-md-auto mb-3">
-                  ホーム画面に追加
+                 トップページに戻る
                 </button>
-              </div>
-            </div>
-            <div class="d-flex-col red-border my-4">
-              <div class="red-card fw-bold px-3 py-2">関連リンク</div>
-              <div class="container">
-                <div class="row">
-                  <div class="col-md-6 col-12 p-3">
-                    <div class="text-center">
-                      <div class="fw-bold text-main">公式サイトに戻る</div>
-                      <button type="button" class="btn-prim w-md-auto">
-                        公式サイトに戻る
-                      </button>
-                    </div>
-                  </div>
-                  <div class="col-md-6 col-12 p-3">
-                    <div class="text-center">
-                      <div class="fw-bold text-main">よくあるご質問</div>
-                      <button type="button" class="btn-prim w-md-auto">
-                        よくあるご質問
-                      </button>
-                    </div>
-                  </div>
-                </div>
               </div>
             </div>
           </div>
@@ -235,7 +139,8 @@
       </div>
     </main>
   </body>
-  <footer><div class="footer-box">
+  <footer>
+    <div class="footer-box">
       <div class="container">
         <div class="footer-links d-none d-sm-block">
           <a href="#">当院について</a> | <a href="#">診療メニュー</a> |
@@ -257,5 +162,6 @@
           <button class="bottom-buttons">アクセス ・TEL</button>
         </div>
       </div>
-    </div></footer>
+    </div>
+  </footer>
 </html>

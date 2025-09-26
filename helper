@@ -2,7 +2,7 @@ Card Components
 
 Base Card 
 - <!-- ========== Start Section ========== -->
-<div class="d-flex-col flex-column my-4 red-border">
+<div class="d-flex flex-column  red-border">
               <div class="red-card fw-bold px-3 py-2">
                 電話番号をご入力ください。
               </div>
@@ -15,7 +15,7 @@ Base Card
 
 
 - <!-- ========== Start Section ========== -->
-<div class="d-flex-col flex-column my-4 red-border">
+<div class="d-flex flex-column  red-border">
               <div class="red-card fw-bold px-3 py-2">
                 ※iPhone・iPadの場合は 共有マークをタップし「ホーム画面に追加」を選択してください。
               </div>
@@ -32,7 +32,7 @@ Input text card
 
 
 - <!-- ========== Start Section ========== -->
-<div class="d-flex-col flex-column my-4 red-border">
+<div class="d-flex-col flex-column  red-border">
               <div class="red-card fw-bold px-3 py-2">
                 電話番号をご入力ください。
               </div>
@@ -54,7 +54,7 @@ Input text card
 
 Select Card 
 - <!-- ========== Start Section ========== -->
-<div class="d-flex-col flex-column my-4 red-border">
+<div class="d-flex-col flex-column  red-border">
               <div class="red-card fw-bold px-3 py-2">
                 電話番号をご入力ください。
               </div>

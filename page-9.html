@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東京第一クリニック - オンライン問診</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Added Noto Sans JP Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style/page-9.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="./images/header.svg" alt="Tokyo First Clinic Logo" />
+          </a>
+          <div class="d-flex justify-content-end gap-3">
+            <button class="btn-online d-none d-sm-block">オンライン診療</button>
+
+            <button class="btn-menu">
+              メニュー
+              <img src="./images/navigation.png" />
+            </button>
+          </div>
+          <div class="d-flex justify-content-center d-sm-none w-100 mt-3">
+            <button class="btn-online">オンライン診療</button>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="d-flex-col my-4 header-card">
+          <div class="fw-semibold py-1">オンライン処方</div>
+          <div class="header-line"></div>
+          <div class="fw-bold fs-5 py-1">マイページ</div>
+          <div class="d-flex flex-column text-main gap-1 fw-medium">
+            <p>
+              NEW! 「30錠以上割引開始のお知らせ」<br />
+              シルデナフィルFCI25mg以外のED治療薬の合計が30錠以上となれば適用されます。
+            </p>
+            <p>
+              「10錠以上の割引について」<br />
+              どのような組み合わせでもED治療薬の合計が10錠以上となれば適用されます。
+              <br />
+              今後、フィナステリド錠1mg
+              「FCl」の処方はアルミ包装無しに切り替わります。<br />
+              詳しくは包装変更のお知らせをご参照ください。<br />
+            </p>
+            <p>
+              発送先が沖縄県でお薬の中に【ミノアップ】又は【ミノキシジル外用液「FCI」】が含まれる場合、空輸便を利用できないの
+              <br />
+              でお薬のお届けまで1週間ほど要することをご了承下さい。
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content Section -->
+    <main class="container">
+      <!--Step Section-->
+      <div class="container d-sm-none">
+        <div class="d-flex-col black-border">
+          <div class="fw-bold text-center text-white bg-dark p-2">
+            現在のステップ
+          </div>
+          <div class="d-flex justify-content-between px-2 py-2 gap-1 mt-2">
+            <a href="#" class="step-item current" aria-selected="true">
+              <div class="step-line"></div>
+              登録</a
+            >
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              編集</a
+            >
+
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              予約</a
+            >
+
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              診察</a
+            >
+
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              処方</a
+            >
+
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              登録</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Form Section -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 d-flex flex-column gap-2">
+            <div class="d-flex flex-column red-border">
+              <div
+                class="d-flex flex-column justify-content-between red-card fw-bold gap-2"
+              >
+                <div>現在のステータス:なし</div>
+                <div class="">
+                  診察の予約をされる場合は下記よりお申し込みください
+                </div>
+              </div>
+              <div class="container d-md-flex justify-content-md-center">
+                <button type="button" class="btn-prim w-md-auto mb-3">
+                  診察予約受付に進む
+                </button>
+              </div>
+            </div>
+            <!-- User Profile Section-->
+            <div class="d-flex flex-column red-border">
+              <!-- Profile Tabs-->
+              <div class="d-flex red-card">
+                <div class="flex-fill prof-tab current">登録情報</div>
+                <div class="flex-fill prof-tab">処方履歴</div>
+                <div class="flex-fill prof-tab">処方薬一覧</div>
+              </div>
+              <!-- Main Section -->
+              <div class="d-flex flex-column gap-3 px-3 py-2">
+                <!--- Email -->
+                <div class="d-flex flex-column header-card gap-2">
+                  <div class="d-flex flex-column">
+                    <p>メールアドレス</p>
+                    <div class="input-line"></div>
+                  </div>
+                  <p id="email">t.sato120485@gmail.com</p>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="red-border text-main bg-transparent mb-2 p-1"
+                    >
+                      メールアドレス変更
+                    </button>
+                  </div>
+                </div>
+                <!--- Password -->
+                <div class="d-flex flex-column header-card gap-2 ">
+                  <div class="d-flex flex-column">
+                    <p>パスワード</p>
+                    <div class="input-line"></div>
+                  </div>
+                  <p id="password">********</p>
+                  <div class="d-flex justify-content-center">
+                    <button
+                      type="button"
+                      class="red-border text-main bg-transparent mb-2 p-1"
+                    >
+                      パスワード変更
+                    </button>
+                  </div>
+                </div>
+                <!--- Client Number -->
+                <div class="d-flex flex-column header-card gap-2 pb-0">
+                  <div class="d-flex flex-column">
+                    <p>カルテ番号</p>
+                    <div class="input-line"></div>
+                  </div>
+                  <p id="client-num">427123</p>
+                </div>
+
+                <!--- Hospital Name  -->
+                <div class="d-flex flex-column header-card gap-2 pb-0">
+                  <div class="d-flex flex-column">
+                    <p>受診されている院名</p>
+                    <div class="input-line"></div>
+                  </div>
+                  <p id="hospital-name">立川駅前院</p>
+                </div>
+
+                 <!--- Name  -->
+                <div class="d-flex flex-column header-card gap-2 pb-0">
+                  <div class="d-flex flex-column">
+                    <p>お名前</p>
+                    <div class="input-line"></div>
+                  </div>
+                  <p id="username">佐藤 太郎 （さとう たろう）</p>
+                </div>
+                
+                 <!--- Birthday  -->
+                <div class="d-flex flex-column header-card gap-2 pb-0">
+                  <div class="d-flex flex-column">
+                    <p>生年月日</p>
+                    <div class="input-line"></div>
+                  </div>
+                  <p id="birthday">1984年 12月 4日</p>
+                </div>
+
+                 <!--- Address  -->
+                <div class="d-flex flex-column header-card gap-2 pb-0">
+                  <div class="d-flex flex-column">
+                    <p>住所</p>
+                    <div class="input-line"></div>
+                  </div>
+                  <p id="address">〒190-0012<br>東京都立川市曙町2-7-18 MISUMIビル5階</p>
+                </div>
+                
+                 <!--- Telephone Number  -->
+                <div class="d-flex flex-column header-card gap-2  pb-0">
+                  <div class="d-flex flex-column">
+                    <p>電話番号</p>
+                    <div class="input-line"></div>
+                  </div>
+                  <p id="tel-phone">09071903919</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Sidebar-->
+          <div class="col-lg-4 d-none d-lg-block">
+            <aside>
+              <div class="sidebar">
+                <div class="sidebar-header">
+                  ご利用ガイド・インストラクション
+                </div>
+                <div class="sidebar-text-area">
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <div class="footer-box">
+      <div class="container">
+        <div class="footer-links d-none d-sm-block">
+          <a href="#">当院について</a> | <a href="#">診療メニュー</a> |
+          <a href="#">診療</a> | <a href="#">院長紹介</a> |
+          <a href="#">診療時間</a> | <a href="#">よくあるご質問</a> |
+          <a href="#">診察</a> | <a href="#">地図・アクセス</a> |
+          <a href="#">ログイン</a> | <a href="#">問診票ダウンロード</a> |
+          <a href="#">よくあるご質問</a> | <a href="#">お問合わせ</a> |
+          <a href="#">医療機器</a> | <a href="#">運営体制</a> |
+          <a href="#">診療科</a> |
+          <a href="#">サイトマップ</a>
+        </div>
+        <div class="copyright">
+          Copyright © 2025 東京第一クリニック All Rights Reserved.
+        </div>
+        <div class="d-none d-sm-block">
+          <button class="bottom-buttons">料金表・診療時間</button>
+          <button class="bottom-buttons">郵送処方</button>
+          <button class="bottom-buttons">アクセス ・TEL</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

@@ -133,96 +133,67 @@
             <div class="d-flex flex-column red-border">
               <!-- Profile Tabs-->
               <div class="d-flex red-card">
-                <div class="flex-fill prof-tab current">登録情報</div>
-                <div class="flex-fill prof-tab">処方履歴</div>
-                <div class="flex-fill prof-tab">処方薬一覧</div>
+                <a href="#" class="flex-fill prof-tab">登録情報</a>
+                <a href="#" class="flex-fill prof-tab current">処方履歴</a>
+                <a href="#" class="flex-fill prof-tab">処方薬一覧</a>
               </div>
               <!-- Main Section -->
               <div class="d-flex flex-column gap-3 px-3 py-2">
-                <!--- Email -->
+                <!-- Date Header -->
+                <div class="d-flex align-items-center">
+                  <p class="mb-0">2024年8月19日 （月）</p>
+                  <button
+                    type="button"
+                    class="text-white fs-6 bg-danger rounded-5"
+                  >
+                    発送済み
+                  </button>
+                </div>
+                <!--- Medication info -->
                 <div class="d-flex flex-column header-card gap-2">
                   <div class="d-flex flex-column">
-                    <p>メールアドレス</p>
+                    <p>薬品名 : シルデナフィル錠 25mg VI “FCI”</p>
                     <div class="input-line"></div>
+                    <div class="row">
+                      <div
+                        class="col-12 col-lg-6 d-flex justify-content-center justify-content-md-start"
+                      >
+                        <img
+                          src="images/viagra.png"
+                          alt="viagra capsules"
+                          class="img-fluid object-fit-contain"
+                        />
+                      </div>
+                      <div class="col-12 col-lg-6 d-flex flex-column">
+                        <p>処方情報</p>
+                        <div class="input-line"></div>
+                        <p class="">
+                          薬品名 : 薬品名  : シルデナフィル錠 25mg VI “FCI”
+                          <br />
+                          単価 : ¥500<br />
+                          数量 : 1錠<br />
+                          合計 : ¥500
+                        </p>
+                      </div>
+                    </div>
                   </div>
-                  <p id="email">t.sato120485@gmail.com</p>
+                  <div class="d-flex flex-column">
+                    <p>処方情報</p>
+                    <div class="input-line"></div>
+                    <p class="">
+                      処方日 : 2024年8月19日 11:03 <br />
+                      状況 : 発送済み <br />
+                      追跡番号 : 62986222706【配送状況】 <br />
+                      配送希望日 : 指定なし <br />
+                      配送希望時間帯 : 時間指定なし お支払金額:¥750(税込)
+                    </p>
+                  </div>
+
                   <div class="d-flex justify-content-center">
-                    <button
-                      type="button"
-                      class="red-border text-main bg-transparent mb-2 p-1"
-                    >
-                      メールアドレス変更
+                    <button type="button" class="btn-prim">
+                      処方薬の併用禁止薬を確認する
                     </button>
                   </div>
-                </div>
-                <!--- Password -->
-                <div class="d-flex flex-column header-card gap-2 ">
-                  <div class="d-flex flex-column">
-                    <p>パスワード</p>
-                    <div class="input-line"></div>
-                  </div>
-                  <p id="password">********</p>
-                  <div class="d-flex justify-content-center">
-                    <button
-                      type="button"
-                      class="red-border text-main bg-transparent mb-2 p-1"
-                    >
-                      パスワード変更
-                    </button>
-                  </div>
-                </div>
-                <!--- Client Number -->
-                <div class="d-flex flex-column header-card gap-2 pb-0">
-                  <div class="d-flex flex-column">
-                    <p>カルテ番号</p>
-                    <div class="input-line"></div>
-                  </div>
-                  <p id="client-num">427123</p>
-                </div>
-
-                <!--- Hospital Name  -->
-                <div class="d-flex flex-column header-card gap-2 pb-0">
-                  <div class="d-flex flex-column">
-                    <p>受診されている院名</p>
-                    <div class="input-line"></div>
-                  </div>
-                  <p id="hospital-name">立川駅前院</p>
-                </div>
-
-                 <!--- Name  -->
-                <div class="d-flex flex-column header-card gap-2 pb-0">
-                  <div class="d-flex flex-column">
-                    <p>お名前</p>
-                    <div class="input-line"></div>
-                  </div>
-                  <p id="username">佐藤 太郎 （さとう たろう）</p>
-                </div>
-                
-                 <!--- Birthday  -->
-                <div class="d-flex flex-column header-card gap-2 pb-0">
-                  <div class="d-flex flex-column">
-                    <p>生年月日</p>
-                    <div class="input-line"></div>
-                  </div>
-                  <p id="birthday">1984年 12月 4日</p>
-                </div>
-
-                 <!--- Address  -->
-                <div class="d-flex flex-column header-card gap-2 pb-0">
-                  <div class="d-flex flex-column">
-                    <p>住所</p>
-                    <div class="input-line"></div>
-                  </div>
-                  <p id="address">〒190-0012<br>東京都立川市曙町2-7-18 MISUMIビル5階</p>
-                </div>
-                
-                 <!--- Telephone Number  -->
-                <div class="d-flex flex-column header-card gap-2  pb-0">
-                  <div class="d-flex flex-column">
-                    <p>電話番号</p>
-                    <div class="input-line"></div>
-                  </div>
-                  <p id="tel-phone">09071903919</p>
                 </div>
               </div>
             </div>

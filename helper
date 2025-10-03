@@ -70,4 +70,59 @@ Select Card
             </div>
 <!-- ========== End Section ========== -->
 
-css
+Prescription Drug Card
+ <!-- ========== Start Section ========== -->
+<div class="col-12 col-lg-6 my-2">
+                      <div class="header-card">
+                        <img
+                          src="images/viagra/sidenafil_FCI_50mg.png"
+                          alt="Sidenafil FCI 50mg"
+                          class="img-fluid"
+                        />
+                        <div class="d-flex flex-column gap-1">
+                          <p class="fw-semibold">シルデナフィル錠 50mg VI 「FCI」</p>
+                          <div class="input-line"></div>
+                          <div class="d-flex gap-1">
+                            <div
+                              class="d-flex flex-column justify-content-center flex-fill text-center red-border bg-white py-2"
+                            >
+                              <p class="fw-semibold">処方単位</p>
+                              <p class="">1錠</p>
+                            </div>
+                            <div
+                              class="d-flex flex-column justify-content-center flex-fill text-center red-border bg-white"
+                            >
+                              <p class="fw-semibold">価 格</p>
+                              <p class="">9000円(税込)</p>
+                            </div>
+                          </div>
+                          <p class="text-main fw-bold">
+                            ※10錠以上は1錠あたり 800円<br />※30錠以上は1錠あたり
+                            700円
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+<!-- ========== End Section ========== -->
+
+Category Button
+
+<!-- ============ Start Section =============== -->
+<!---List of Prescription Drugs -->
+                <button
+                  class="header-card text-decoration-none text-black fw-semibold"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseViagra"
+                  type="button"
+                  aria-expanded="false"
+                  aria-controls="collapseViagra"
+                >
+                  <div
+                    class="d-flex justify-content-between align-items-center"
+                  >
+                    <p class="">バイアグラ・バイアグラジェネリック</p>
+                    <img src="images/down_arrow.svg" alt="down arrow" />
+                  </div>
+                </button>
+
+<!--================ End Section ================ -->

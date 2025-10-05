@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link href="./style/page-template.css" rel="stylesheet" />
+    <link href="./style/page-universal.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header Section -->
@@ -43,16 +43,12 @@
           </div>
         </div>
       </nav>
+      <!-- Header Card -->
       <div class="container">
         <div class="d-flex-col my-4 header-card py-2 px-3">
-          <div class="fw-semibold py-1">オンライン診療</div>
+          <div class="fw-semibold py-1">オンライン処方</div>
           <div class="header-line"></div>
-          <div class="fw-bold fs-5 py-1">オンライン診療ログイン(初診可)</div>
-          <div class="text-main py-1">
-            【ご確認事項】<br />
-            ◆ご利用いただけるのは20歳以上の男性のみです。<br />
-            ※代理での処方はできません。必ず服用するご本人が登録を行って下さい。
-          </div>
+          <div class="fw-bold fs-5 py-1">メールアドレスの変更</div>
         </div>
       </div>
     </header>
@@ -99,9 +95,48 @@
       <!-- Form Section -->
       <div class="container my-4">
         <div class="row">
-          <div class="col-lg-8 d-flex flex-column gap-2">
-          
-          </div>
+          <form class="form-container col-lg-8 d-flex flex-column gap-2">
+            <div class="d-flex flex-column red-border">
+              <div class="red-card fw-bold">
+                メールアドレスの変更 <br />
+                新しいメールアドレスをご入力ください。
+              </div>
+              <div class="d-flex flex-column gap-2 px-3 py-2">
+                <div class="d-flex flex-column gap-1">
+                  <label for="email" class="form-label">メールアドレス </label>
+                  <input
+                    type="text"
+                    id="email"
+                    class="form-control"
+                    placeholder="メールアドレスをご入力ください。"
+                    required
+                  />
+                  <div class="input-line"></div>
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="confirm-email" class="form-label">再入力 </label>
+                  <input
+                    type="text"
+                    id="confirm-email"
+                    class="form-control"
+                    placeholder="メールアドレスをご入力ください。"
+                    required
+                  />
+                  <div class="input-line"></div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn-prim">
+                    メールアドレス確認
+                  </button>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="btn-prim-white">
+                    戻る
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
           <!-- Sidebar-->
           <div class="col-lg-4 d-none d-lg-block">
             <aside>

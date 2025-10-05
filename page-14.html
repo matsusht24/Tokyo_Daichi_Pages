@@ -20,7 +20,7 @@
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <link href="./style/page-template.css" rel="stylesheet" />
+    <link href="./style/page-universal.css" rel="stylesheet" />
   </head>
   <body>
     <!-- Header Section -->
@@ -43,15 +43,14 @@
           </div>
         </div>
       </nav>
+      <!-- Header Card -->
       <div class="container">
         <div class="d-flex-col my-4 header-card py-2 px-3">
-          <div class="fw-semibold py-1">オンライン診療</div>
+          <div class="fw-semibold py-1">オンライン処方</div>
           <div class="header-line"></div>
-          <div class="fw-bold fs-5 py-1">オンライン診療ログイン(初診可)</div>
-          <div class="text-main py-1">
-            【ご確認事項】<br />
-            ◆ご利用いただけるのは20歳以上の男性のみです。<br />
-            ※代理での処方はできません。必ず服用するご本人が登録を行って下さい。
+          <div class="fw-bold fs-5 py-1">登録情報の変更</div>
+           <div class="text-main py-1">
+            ※電話問診終了後にお名前を変更された場合は、発送ができません。<br>（電子カルテのお名前と整合性が取れないと処方不可なため）
           </div>
         </div>
       </div>
@@ -99,9 +98,52 @@
       <!-- Form Section -->
       <div class="container my-4">
         <div class="row">
-          <div class="col-lg-8 d-flex flex-column gap-2">
-          
-          </div>
+          <form class="form-container col-lg-8 d-flex flex-column gap-2">
+            <div class="d-flex flex-column red-border">
+              <div class="red-card fw-bold">
+               登録情報の変更
+              </div>
+              <div class="d-flex flex-column gap-2 px-3 py-2">
+                <!-- Name  -->
+                <div class="continer d-flex flex-column gap-1">
+                  <label for="name" class="form-label">氏名<span class="text-danger">(必須)</span></label>
+                  <div class="row">
+                    <div class="col-6 d-flex flex-column gap-2"><label for="first-name" class="form-label">姓</label><input
+                    type="text"
+                    id="first-name"
+                    class="form-control"
+                    placeholder="佐藤"
+                    required
+                  /></div>
+                  <div class="input-line"></div>
+                  </div>
+                
+                  
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="confirm-password" class="form-label">パスワード再入力<span class="text-danger">(必須)</label>
+                  <input
+                    type="password"
+                    id="confirm-password"
+                    class="form-control"
+                    placeholder="*****"
+                    required
+                  />
+                  <div class="input-line"></div>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="submit" class="btn-prim">
+                    パスワードを変更する
+                  </button>
+                </div>
+                <div class="d-flex justify-content-center">
+                  <button type="button" class="btn-prim-white">
+                    戻る
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
           <!-- Sidebar-->
           <div class="col-lg-4 d-none d-lg-block">
             <aside>

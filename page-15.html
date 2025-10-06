@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東京第一クリニック - オンライン問診</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Added Noto Sans JP Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style/page-universal.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="./images/header.svg" alt="Tokyo First Clinic Logo" />
+          </a>
+          <div class="d-flex justify-content-end gap-3">
+            <button class="btn-online d-none d-sm-block">オンライン診療</button>
+
+            <button class="btn-menu">
+              メニュー
+              <img src="./images/navigation.png" />
+            </button>
+          </div>
+          <div class="d-flex justify-content-center d-sm-none w-100 mt-3">
+            <button class="btn-online">オンライン診療</button>
+          </div>
+        </div>
+      </nav>
+      <div class="container">
+        <div class="d-flex-col my-4 header-card py-2 px-3">
+          <div class="fw-semibold py-1">オンライン診療</div>
+          <div class="header-line"></div>
+          <div class="fw-bold fs-5 py-1">問診票</div>
+        </div>
+      </div>
+    </header>
+    <!-- Main Content Section -->
+    <main class="container">
+      <!--Step Section-->
+      <div class="container d-sm-none">
+        <div class="d-flex-col black-border">
+          <div class="fw-bold text-center text-white bg-dark p-2">
+            現在のステップ
+          </div>
+          <div class="d-flex justify-content-between px-2 py-2 gap-1 mt-2">
+            <a href="#" class="step-item current" aria-selected="true">
+              <div class="step-line"></div>
+              登録</a
+            >
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              編集</a
+            >
+
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              予約</a
+            >
+
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              診察</a
+            >
+
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              処方</a
+            >
+
+            <a href="#" class="step-item" aria-selected="false">
+              <div class="step-line"></div>
+              登録</a
+            >
+          </div>
+        </div>
+      </div>
+      <!-- Form Section -->
+      <div class="container my-4">
+        <div class="row">
+          <form class="form-container col-lg-8 d-flex flex-column gap-2">
+           <!-- Question 1-->
+            <div class="d-flex-col flex-column red-border">
+              <div class="red-card fw-bold">
+                最後の受診以降（初診の方は過去に）大きな病気を患った。「はい」とご回答の方は病名と発症日をお答えください。
+              </div>
+              <div class="container">
+                <div class="d-flex gap-2 p-2 my-1">
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="disease-yes"
+                      name="have-disease"
+                      class="hidden-radio d-none"
+                    />
+                    <label
+                      for="disease-yes"
+                      class="question-button-box w-md-auto"
+                    >
+                      はい</label
+                    >
+                  </div>
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="disease-no"
+                      name="have-disease"
+                      class="hidden-radio d-none"
+                    />
+                    <label for="disease-no" class="question-button-box w-md-auto">
+                      いいえ</label
+                    >
+                  </div>
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="disease-info" class="form-label">「はい」とご回答の方は病名と発症日をお答えください。</label>
+                  <input 
+                  id="disease-info"
+                  class="form-control"
+                  placeholder="こちらにご入力ください"/>
+                </div>
+                <div class="input-line mb-2"></div>
+              </div>
+            </div>
+            <!-- End of Question 1-->
+             <!-- Question 2-->
+            <div class="d-flex-col flex-column red-border">
+              <div class="red-card fw-bold">
+                最後の受診以降（初診の方は過去に）大きな手術をした。
+              </div>
+              <div class="container">
+                <div class="d-flex gap-2 p-2 my-1">
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="surgery-yes"
+                      name="have-surgery"
+                      class="hidden-radio d-none"
+                    />
+                    <label
+                      for="surgery-yes"
+                      class="question-button-box w-md-auto"
+                    >
+                      はい</label
+                    >
+                  </div>
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="surgery-no"
+                      name="have-surgery"
+                      class="hidden-radio d-none"
+                    />
+                    <label for="surgery-no" class="question-button-box w-md-auto">
+                      いいえ</label
+                    >
+                  </div>
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="surgery-info" class="form-label">「はい」とご回答の方は病名・手術名をお答えください。</label>
+                  <input 
+                  id="surgery-info"
+                  class="form-control"
+                  placeholder="こちらにご入力ください"/>
+                </div>
+                <div class="input-line mb-2"></div>
+              </div>
+            </div>
+            <!-- End of Question 2-->
+            <!-- Question 3 -->
+             <div class="d-flex-col flex-column  red-border">
+              <div class="red-card fw-bold">
+                現在使用しているお薬を全てご記入ください。（目薬を含む）
+              </div>
+              <div class="d-flex flex-column px-3 py-2">
+                <label for="list-medications" class="form-label"
+                  >前回ご入力いただいたお薬を自動入力しています。相違がある場合は必ず修正をお願いします</label
+                >
+                <p class="form-text">例）カンデサルタン、アムロジピン、エナラプリルマレイン酸塩、ロサルタンカリウム、アロプリノール、グリメピリド、メトホルミン塩酸塩等々・・</p>
+                <input
+                  type="text"
+                  id="list-medications"
+                  class="form-control"
+                  placeholder="ここに入力してください"
+                  required
+                />
+                <div class="input-line"></div>
+              </div>
+            </div>
+            <!-- End of Question 3 -->
+              <!-- Question 4-->
+            <div class="d-flex-col flex-column red-border">
+              <div class="red-card fw-bold">
+                現在処方されているお薬で気になる点などございますか？
+              </div>
+              <div class="container d-flex flex-column gap-1">
+                <div class="d-flex gap-2 p-2 my-1">
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="concerns-yes"
+                      name="have-concerns"
+                      class="hidden-radio d-none"
+                    />
+                    <label
+                      for="concerns-yes"
+                      class="question-button-box w-md-auto"
+                    >
+                      はい</label
+                    >
+                  </div>
+                  <div class="">
+                    <input
+                      type="radio"
+                      id="concerns-no"
+                      name="have-concerns"
+                      class="hidden-radio d-none"
+                    />
+                    <label for="concerns-no" class="question-button-box w-md-auto">
+                      いいえ</label
+                    >
+                  </div>
+                </div>
+                <div class="d-flex flex-column gap-1">
+                  <label for="concerns-info" class="form-label">「はい」とご回答の方は気になる点を入力してください。</label>
+                  <input 
+                  id="concerns-info"
+                  class="form-control"
+                  placeholder="こちらにご入力ください"/>
+                </div>
+                <div class="input-line"></div>
+                <div class="d-flex gap-2 mb-2">
+                  <input type="checkbox" id="is-patient" />
+                  <label for="is-patient">患者本人で間違いありません</label>
+                </div>
+              </div>
+            </div>
+            <!-- End of Question 4-->
+              <!-- Question 5 -->
+             <div class="d-flex-col flex-column  red-border">
+              <div class="red-card fw-bold">
+                「オンライン処方ご利用規約」をお読みいただいた上で「利用規約に同意する」にチェックしてください。 (*)
+              </div>
+              <div class="d-flex flex-column px-3 py-2 gap-3">
+                <a href="#" class="text-main">前回ご入力いただいたお薬を自動入力しています。相違がある場合は必ず修正をお願いします</a>
+                
+                <div class="d-flex gap-3">
+                  <input type="checkbox" id="terms-conditions">
+                  <label for="terms-conditions" class="form-label">利用規約に同意する</label>
+                </div>
+                
+              </div>
+            </div>
+            <!-- End of Question 5 -->
+             <div class="d-flex justify-content-center">
+              <button class="btn-prim" type="submit">登録情報を保存する</button>
+             </div>
+          </form>
+          <!-- Sidebar-->
+          <div class="col-lg-4 d-none d-lg-block">
+            <aside>
+              <div class="sidebar">
+                <div class="sidebar-header">
+                  ご利用ガイド・インストラクション
+                </div>
+                <div class="sidebar-text-area">
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                  <p>ご利用方法をこちらにご記入ください。</p>
+                </div>
+              </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <div class="footer-box">
+      <div class="container">
+        <div class="footer-links text-center">
+          <a href="#">当院について</a> | <a href="#">診療メニュー</a> |
+          <a href="#">診療</a> | <a href="#">院長紹介</a> |
+          <a href="#">診療時間</a> | <a href="#">よくあるご質問</a> |
+          <a href="#">診察</a> | <a href="#">地図・アクセス</a> |
+          <a href="#">ログイン</a> | <a href="#">問診票ダウンロード</a> |
+          <a href="#">よくあるご質問</a> | <a href="#">お問合わせ</a> |
+          <a href="#">医療機器</a> | <a href="#">運営体制</a> |
+          <a href="#">診療科</a> |
+          <a href="#">サイトマップ</a>
+        </div>
+        <div class="copyright">
+          Copyright © 2025 東京第一クリニック All Rights Reserved.
+        </div>
+        <div class="d-flex justify-content-center gap-2 d-sm-none m-1">
+          <button class="btn-prim">料金表・診療時間</button>
+          <button class="btn-prim">郵送処方</button>
+          <button class="btn-prim">アクセス ・TEL</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

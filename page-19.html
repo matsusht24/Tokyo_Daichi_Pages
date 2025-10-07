@@ -44,16 +44,10 @@
         </div>
       </nav>
       <div class="container">
-        <div class="d-flex flex-column my-4 header-card py-2 px-3 gap-2">
-          <div class="fw-semibold py-1 border-bottom border-black">
-            オンライン診療
-          </div>
-          <div class="fw-bold fs-5 py-1">オンライン診療ログイン(初診可)</div>
-          <div class="text-main py-1">
-            【ご確認事項】<br />
-            ◆ご利用いただけるのは20歳以上の男性のみです。<br />
-            ※代理での処方はできません。必ず服用するご本人が登録を行って下さい。
-          </div>
+        <div class="d-flex-col my-4 header-card ">
+          <div class="fw-semibold py-1">オンライン処方</div>
+          <div class="header-line"></div>
+          <div class="fw-bold fs-5 py-1">診察予約キャンセル</div>
         </div>
       </div>
     </header>
@@ -97,11 +91,41 @@
           </div>
         </div>
       </div>
-      <!-- Form Section -->
+      <!-- Success Section -->
       <div class="container my-4">
         <div class="row">
           <div class="col-lg-8 d-flex flex-column gap-2">
-          
+            <div
+              class="d-flex flex-column header-card  align-items-center gap-2 pt-5"
+            >
+              <img
+                src="./images/failure.svg"
+                alt="failure icon"
+                width="95"
+                height="95"
+              />
+              <div class="text-main fw-bold text-center fs-6">
+              診察予約をキャンセルします
+              </div>
+              <div class="text-main">
+                下記の内容で診察のご予約を受け付けております。<br>キャンセルする場合は「予約キャンセル」ボタンを押してください。
+              </div>
+              
+              <div class="d-flex flex-column bg-white red-border text-main fw-bold px-3 py-2 gap-1 w-100">
+                <div class="">診察希望日時：<br>①2025年7月28日（月）<br>②19:00～19:30 </div>
+                <div>登録電話番号：09071903919</div>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <button type="button" class="btn-prim w-md-auto ">
+                予約キャンセル
+                </button>
+              </div>
+              <div class="container d-flex justify-content-center">
+                <button type="button" class="btn-prim-white w-md-auto mb-3">
+                 マイページへ戻る
+                </button>
+              </div>
+            </div>
           </div>
           <!-- Sidebar-->
           <div class="col-lg-4 d-none d-lg-block">
@@ -128,7 +152,7 @@
   <footer>
     <div class="footer-box">
       <div class="container">
-        <div class="footer-links text-center">
+        <div class="footer-links d-none d-sm-block">
           <a href="#">当院について</a> | <a href="#">診療メニュー</a> |
           <a href="#">診療</a> | <a href="#">院長紹介</a> |
           <a href="#">診療時間</a> | <a href="#">よくあるご質問</a> |
@@ -142,10 +166,10 @@
         <div class="copyright">
           Copyright © 2025 東京第一クリニック All Rights Reserved.
         </div>
-        <div class="d-flex justify-content-center gap-2 d-sm-none m-1">
-          <button class="btn-prim">料金表・診療時間</button>
-          <button class="btn-prim">郵送処方</button>
-          <button class="btn-prim">アクセス ・TEL</button>
+        <div class="d-none d-sm-block">
+          <button class="bottom-buttons">料金表・診療時間</button>
+          <button class="bottom-buttons">郵送処方</button>
+          <button class="bottom-buttons">アクセス ・TEL</button>
         </div>
       </div>
     </div>

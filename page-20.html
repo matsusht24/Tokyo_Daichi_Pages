@@ -44,16 +44,10 @@
         </div>
       </nav>
       <div class="container">
-        <div class="d-flex flex-column my-4 header-card py-2 px-3 gap-2">
-          <div class="fw-semibold py-1 border-bottom border-black">
-            オンライン診療
-          </div>
-          <div class="fw-bold fs-5 py-1">オンライン診療ログイン(初診可)</div>
-          <div class="text-main py-1">
-            【ご確認事項】<br />
-            ◆ご利用いただけるのは20歳以上の男性のみです。<br />
-            ※代理での処方はできません。必ず服用するご本人が登録を行って下さい。
-          </div>
+        <div class="d-flex-col my-4 header-card py-2 px-3">
+          <div class="fw-semibold py-1">オンライン診療</div>
+          <div class="header-line"></div>
+          <div class="fw-bold fs-5 py-1">カート内容確認</div>
         </div>
       </div>
     </header>
@@ -97,11 +91,89 @@
           </div>
         </div>
       </div>
-      <!-- Form Section -->
+      <!-- Prescription Card Section -->
       <div class="container my-4">
         <div class="row">
           <div class="col-lg-8 d-flex flex-column gap-2">
-          
+            <div class="d-flex-col flex-column red-border">
+              <div class="red-card fw-bold">カート内商品 2点</div>
+              <div class="header-card d-flex flex-column m-2 gap-3">
+                <div class="row">
+                  <div class="col-12 col-lg-6 d-flex flex-column gap-1">
+                    <img
+                      src="images/viagra/viagra_25mg.png"
+                      alt="viagra 25mg"
+                      class="img-fluid"
+                    />
+                    <div class="d-flex flex-column gap-1">
+                      <div class="">
+                        薬品名  :
+                        <span class="text-main fw-semibold"
+                          >バイアグラ 25mg</span
+                        >
+                      </div>
+                      <div class="">
+                        処方数：1錠<br />価格：1300円（税込）<br /><br />小計：1300円（税込）
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6 d-flex flex-column gap-1">
+                    <img
+                      src="images/viagra/lemon_sidenafil_50mg.png"
+                      alt="viagra 25mg"
+                      class="img-fluid"
+                    />
+                    <div class="d-flex flex-column gap-1">
+                      <div class="">
+                        薬品名  :
+                        <span class="text-main fw-semibold"
+                          >【レモン】 シルデナフィルOD錠 50mg VI
+                          「トーワ」</span
+                        >
+                      </div>
+                      <div class="">
+                        処方数：2錠<br />
+                        価格：1300円（税込）<br /><br />
+                        小計：2600円（税込）
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <p class="border-top border-black border-2 mb-0">
+                  送料：¥250<br /><span class="text-main fw-semibold"
+                    >決済金額：¥4,150</span
+                  >
+                </p>
+                <div class="d-flex flex-column gap-3">
+                  <div class="bg-white text-main w-100 red-border p-2">
+                    <span class="fw-semibold">[配送について]</span> <br />
+                    処方薬は日本郵便「ゆうパケット(送料 250
+                    円)」でお届けいたします。
+                    配送日時のご指定はできませんがお届け先の
+                    ポストに投函。ご不在でも届きますので在宅
+                    の必要はございません。
+                  </div>
+                  <p>
+                    数量・処方薬の変更はお電<span class="text-main fw-semibold"
+                      >(0120-179922)</span
+                    >
+                    にて承ります。<br />上記の処方でよろしければ下記の内容をご確認の
+                    上、決済画面にお進みください。
+                  </p>
+                </div>
+                <div class="d-flex flex-column gap-2">
+                  <div class="d-flex justify-content-center">
+                    <button class="btn-prim-white">
+                      処方薬の併用禁忌薬を確認する
+                    </button>
+                  </div>
+                  <div class="d-flex justify-content-center">
+                    <button class="btn-prim mb-1">決済へ進む</button>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- Sidebar-->
           <div class="col-lg-4 d-none d-lg-block">

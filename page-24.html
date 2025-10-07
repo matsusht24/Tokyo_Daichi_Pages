@@ -48,12 +48,9 @@
           <div class="fw-semibold py-1 border-bottom border-black">
             オンライン診療
           </div>
-          <div class="fw-bold fs-5 py-1">オンライン診療ログイン(初診可)</div>
-          <div class="text-main py-1">
-            【ご確認事項】<br />
-            ◆ご利用いただけるのは20歳以上の男性のみです。<br />
-            ※代理での処方はできません。必ず服用するご本人が登録を行って下さい。
-          </div>
+
+          <div class="fw-bold fs-5 py-1">決済内容のご確認</div>
+         
         </div>
       </div>
     </header>
@@ -97,12 +94,97 @@
           </div>
         </div>
       </div>
-      <!-- Form Section -->
+      <!-- Prescription Card Section -->
       <div class="container my-4">
         <div class="row">
-          <div class="col-lg-8 d-flex flex-column gap-2">
-          
-          </div>
+          <form class="col-lg-8 d-flex flex-column gap-2">
+            <!-- Payment Method -->
+            <div class="d-flex gap-2">
+              <a
+                class="payment-card d-flex flex-column flex-fill"
+                href="#"
+              >
+                <img
+                  src="images/icons/credit-card.svg"
+                  alt="card icon"
+                  width="16"
+                  height="16 "
+                />
+                カード
+              </a>
+              <a class="payment-card d-flex flex-column selected flex-fill" href="#">
+                <img
+                  src="images/icons/cod_selected.svg"
+                  alt="bank transfer"
+                  width="16"
+                  height="16 "
+                />
+                銀行振込
+              </a>
+              <a class="payment-card d-flex flex-column flex-fill" href="#">
+                <img
+                  src="images/icons/bank.svg"
+                  alt="convience store icon"
+                  width="16"
+                  height="16 "
+                />
+                コンビニ決済
+              </a>
+            </div>
+            <div class="d-flex flex-column red-border">
+              <div class="red-card fw-bold">お支払い</div>
+              
+
+              <div class="header-card d-flex flex-column m-2 gap-3">
+                <div class="row">
+                  <div class="col-12 col-lg-6 d-flex flex-column gap-1">
+                    <p class="border-bottom border-black">カート内商品1点</p>
+                    <img
+                      src="images/viagra/viagra_25mg.png"
+                      alt="viagra 25mg"
+                      class="img-fluid"
+                    />
+                    <div class="d-flex flex-column gap-1">
+                      <div class="">
+                        薬品名  :
+                        <span class="text-main fw-semibold"
+                          >バイアグラ 25mg</span
+                        >
+                      </div>
+                      <div class="">
+                        処方数：1錠<br />価格：1300円（税込）<br /><br />小計：1300円（税込）
+                      </div>
+                    </div>
+                  </div>
+                  
+                </div>
+
+              </div>
+              <div class="header-card d-flex flex-column m-2 gap-2">
+                <p class="border-bottom border-black pb-2">ご注文内容</p>
+                <p>商品合計：1,300（税込）<br>送料：¥250（税込）<br><span class="text-danger fw-semibold">決済金額：¥1,550（税込）</span></p>
+              </div>
+              <div class="header-card d-flex flex-column m-2 gap-2">
+                <p class="border-bottom border-black pb-2">お支払い方法</p>
+                <p>クレジットカード</p>
+              </div>
+               <div class="header-card d-flex flex-column m-2 gap-2">
+                <p class="border-bottom border-black pb-2">配送先</p>
+                <p>〒190-0012<br> 東京都立川市曙町2-7-18<br> MISUMIビル 5階</p>
+              </div>
+              <div class="header-card d-flex flex-column m-2 gap-2">
+                <p class="border-bottom border-black pb-2">配送オプション</p>
+                <p>配送希望日：指定なし<br>配送希望時間帯：時間指定なし<br>配送品名：内服薬<br>配送元表記：浜松町第一クリニック<br>備考欄：（空欄）</p>
+              </div>
+              <p class="m-2">（GMOクレジット決済画面へ移動します）<br> 「<span class="text-danger">特定商取引法に基づく表記</span>」はこちら</p>
+              <div class="d-flex justify-content-center">
+                <button class="btn-prim">クレジットカード決済へ進む</button>
+              </div>
+               <div class="d-flex justify-content-center">
+                <button class="btn-prim-white mb-3">戻る</button>
+              </div>
+            </div>
+          </form>
           <!-- Sidebar-->
           <div class="col-lg-4 d-none d-lg-block">
             <aside>

@@ -517,12 +517,131 @@
           <p class="fs-5 text-danger">処方薬価格</p>
           <button class="btn-prim-white">価格詳細はこちら</button>
         </div>
-        <div class="d-flex flex-column gap-3 py-4 px-2"> 
-          <img src="images/clinic/doctor.png" alt="doctor photo" height="350" width="343">
-          <p class="fs-5">浜松町第一クリニック</p> 
-          <p class="fs-6">皆様が満足のいく性生活を送ることができますよう全力でサポートいたします。<br>服用することへの抵抗や不安などございましたらご予約は不要ですので最寄りのクリニックまでお気軽にご来院ください。</p>
+        <div
+          class="d-flex flex-column gap-3 py-4 px-2"
+          style="background-color: #fff2f2"
+        >
+          <img
+            src="images/clinic/doctor.png"
+            alt="doctor photo"
+            height="350"
+            width="343"
+          />
+          <p class="fs-5">浜松町第一クリニック</p>
+          <p class="fs-6">
+            皆様が満足のいく性生活を送ることができますよう全力でサポートいたします。<br />服用することへの抵抗や不安などございましたらご予約は不要ですので最寄りのクリニックまでお気軽にご来院ください。
+          </p>
           <button class="btn-prim">各院 院長紹介</button>
         </div>
+        <div class="d-flex flex-column gap-3">
+          <h2 class="fw-bold fs-4 text-center">資料請求</h2>
+          <p>
+            「<span class="text-danger">メールアドレスが無い</span>」「<span
+              class="text-danger"
+              >インターネットが不得意</span
+            >」等々でお困りの方向けにシステムを利用しないで処方を受けるための資料をお送りします。ご希望の方は下記のリンクから発送先情報をご入力ください。
+          </p>
+          <form class="d-flex flex-column gap-2">
+            <label for="postal-code"
+              >郵便番号<span class="text-danger">(必須)</span></label
+            >
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  id="postal-code"
+                  class="form-control"
+                  placeholder="190"
+                  class="form-control border-bottom border-black"
+                />
+              </div>
+              <div class="col-6">
+                <input
+                  type="text"
+                  id="postal-code"
+                  class="form-control"
+                  placeholder="0012"
+                  class="form-control border-bottom border-black"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <label for="address">住所 <span class="text-danger">(必須)</span> </label>
+              <input type="text" class="form-control" placeholder="住所" id="address"/>
+            </div>
+            <div class="d-flex flex-column">
+              <label for="building-name">番地・ビル名等 <span class="text-danger">(必須)</span> </label>
+              <input type="text" class="form-control" placeholder="住所" id="building-name" />
+            </div>
+             <div class="d-flex flex-column">
+              <label for="name">お名前<span class="text-danger">(必須)</span> </label>
+              <input type="text" class="form-control" placeholder="お名前" id="name" />
+            </div>
+              <div class="d-flex flex-column">
+              <label for="name">電話番号<span class="text-danger">(必須)</span> </label>
+              <input type="text" class="form-control" placeholder="電話番号" id="name" />
+            </div>
+            <div class="d-flex flex-column">
+              <label for="name">ご相談内容 <span class="text-danger">(必須)</span> </label>
+              <div class="d-flex gap-2"><input type="checkbox" class="" id="ED" /> <label for="ED">勃起不全薬（ED）　</label></div>
+              <div class="d-flex gap-2"><input type="checkbox" class="" id="AGA" /> <label for="ED">男性型脱毛症薬（AGA）</label></div>
+            </div>
+            <button type="submit" class="btn-prim">入力内容を確認する</button>
+            <p>※<span class="text-danger">ご自宅にFAXがある場合</span>は「0120-237722」もしくは「03-5777-3729」にご連絡いただきFAX番号をお伝えいただければ資料をFAXで送信することも可能です。</p>
+          </form>
+        </div>
+        <div class="d-flex flex-column gap-3">
+          <h2 class="fs-5 fw-bold">送料とお支払い方法</h2>
+          <div class="d-flex flex-column gap-1 p-1">
+            <p class="fs-6 px-2 py-1" style="background-color: #FFF2F2;" >送料</p>
+            <div class="d-flex flex-column gap-2">
+              <p class="text-center fs-6 text-white p-1" style="background-color: #E57373;">10,000円（税込）以上の場合</p>
+              <p><span class="text-danger">送料無料</span><br>※代引きの場合は別途代引き手数料396円(税込)がかかります。<br>※銀行振込の場合、振込手数料は患者様のご負担となりますのでご了承下さい。</p>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <p class="text-center fs-6 text-white p-1" style="background-color: #E57373;">10,000円（税込）未満の場合</p>
+              <p>「配送日時指定なし」かつ「厚みが1cm以下」の場合は、<span class="text-danger">送料250円(税込)で全国一律配送可能</span>です。<br>※ゆうパケット(ポスト投函方式)でのお届けとなります。<br>「配送日時指定あり」「代引きを利用」「厚みが1cm以上」このいずれかの場合は［ゆうパック］料金表通りの配送となります。</p>
+              <button type="button" class="btn-prim">詳細はこちらから</button>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-3">
+          <h2 class="fs-6">お支払い方法</h2>
+          <div class="d-flex flex-column gap-1 p-1">
+            <p class="fs-6 px-2 py-1" style="background-color: #FFF2F2;" >送料</p>
+            <div class="d-flex flex-column gap-2">
+              <p class="text-center fs-6 text-white p-1" style="background-color: #E57373;">クレジットカード</p>
+              <p>VISA、MASTER、JCB、DINERS、AMEX</p>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <p class="text-center fs-6 text-white p-1" style="background-color: #E57373;">代金引換</p>
+              <p>代引き手数料396円(税込)</p>
+              
+            </div>
+             <div class="d-flex flex-column gap-2">
+              <p class="text-center fs-6 text-white p-1" style="background-color: #E57373;">銀行振込</p>
+              <p>振込確認後の発送となります。<br>振込手数料は患者様のご負担となりますのでご了承下さい。</p>
+              
+            </div>
+          </div>
+        </div>
+         <div
+          class="d-flex flex-column gap-1 justify-content-center align-items-center px-4 py-3"
+          style="background-color: #ffdada"
+        >
+          <p class="fs-5 text-danger">処方薬価格</p>
+          <button class="btn-prim-white">価格詳細はこちら</button>
+        </div>
+        <div class="d-flex flex-column gap-2" style="background-color: #FFF2F2;">
+          <div class="d-flex flex-column"><h2 class="text-secondary text-center fw-bold fs-4">アカウント登録</h2>
+          <p class="text-secondary"><span class="text-danger">◆来院歴のない初診の方もＯＫ◆</span><br>オンライン処方のアカウントに登録するご希望のメールアドレスをご記入ください。<br>※「迷惑メール設定」をしている場合は「@hama1-cl.jp」からのメールを受信できるように設定をお願いします。</p>
+          <button class="btn-prim">新規登録ページへ</button></div>
+          
+          <p class="text-secondary"><span class="text-danger">◆docomoメールの場合の注意点◆</span><br>メールアドレスを入力して送信後、当院からのメールが届かない場合は、パソコンからのメールを拒否設定してる可能性が高いです。解除する方法は以下のNTTドコモの公式サイトをご参考下さい。<br>携帯・PHS／パソコンなどのメール設定｜NTT docomo
+「メールアドレスが無い」「インターネットが不得意で登録が上手くいかない」でお困りの方はシステムを利用しないで処方を受けるための資料をお送りします。</p>
+          <button class="btn-prim">資料請求はこちら</button></div>
+        </div>
+        <div class="py-4 px-2">フリーダイヤル 0120-237722　<br>TEL 03-5777-3729<br>〒105-0013　<br>東京都港区浜松町1-22-7 鶴栄ビル5階<br>JR「浜松町駅北口」より徒歩1分、文化放送ビルのすぐ裏。<br>URL: https://www.hama1-cl.jp/</div>
       </div>
     </main>
   </body>

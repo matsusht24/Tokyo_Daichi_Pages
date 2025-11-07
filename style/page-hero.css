@@ -6,6 +6,7 @@
   color: #d32f2f;
 }
 p {
+  
   margin-bottom: 0rem;
 }
 
@@ -176,6 +177,9 @@ footer {
     background-color: #FFF2F2;
 }
 
+
+
+
 /* Media Query */
 @media (min-width: 768px) {
   .btn-prim, .btn-prim-white {
@@ -200,5 +204,16 @@ footer {
   .step-card {
     max-height: 224px;
   }
+  
+  .step-6-card {
+    max-height: 224px;
+  }
+  .colored-header {
+    width: 323px;
+  }
 
+  .hero-circle {
+    width: 109px !important;
+    height: 109px !important;
+  }
 }

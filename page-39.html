@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東京第一クリニック - オンライン問診</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Added Noto Sans JP Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style/page-hero.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="./images/header.svg" alt="Tokyo First Clinic Logo" />
+          </a>
+          <div class="d-flex justify-content-end gap-3">
+            <button class="btn-online d-none d-sm-block">オンライン診療</button>
+
+            <button class="btn-menu">
+              メニュー
+              <img src="./images/navigation.png" />
+            </button>
+          </div>
+          <div class="d-flex justify-content-center d-sm-none w-100 mt-3">
+            <button class="btn-online">オンライン診療</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Content Section -->
+    <main class="container">
+      <div
+        class="d-flex flex-column gap-4 py-3 px-2 mb-2"
+        style="background-color: #fff2f2"
+      >
+        <p class="fs-4 fw-bold">オンライン処方に関する<br />よくあるご質問</p>
+        <button class="w-100 bg-danger border-danger py-2 text-white fw-bold">
+          オンライン診療のご利用について
+        </button>
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">オンライン診療とはなんですか？</p>
+            </div>
+            <p>
+              オンライン診療とは、インターネットと電話を用いて、診察を行い、お薬を郵送にて処方する診療方法です。
+              都度ご来院頂く必要がなく、空いた時間に診察を受けられるため、遠方の患者様やご来院のお時間を取れない方には大きなメリットとなります。
+              <br /><br />
+              オンライン診療の際にも、電話問診を医師が直接行いますので、ご不明点やご不安なことがございましたら、医師に電話を通して直接ご質問頂けます。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                オンライン診療（郵送処方）の流れを教えて下さい。
+              </p>
+            </div>
+            <p>
+              アカウント作成 ➡ 電話問診のご予約 ➡ 電話問診 ➡ 決済・配送の選択 ➡
+              お薬が郵送で到着という流れです。<br /><br />
+              基本的には、一般的な通販サイトと同様の流れですが、医師との電話問診があることが唯一異なる点です。オンライン処方初回は、新規登録のお手間が少しございますが、2回目からは非常にスムーズにお薬の処方が受けられます。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                オンライン診療を利用するのに必要なものはなんですか
+              </p>
+            </div>
+            <p>
+              インターネットに接続されているパソコン・スマートフォン・タブレット端末が必要となります。また送受信可能なEメールアドレスが必要となります。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                パソコンを持っていないのですが、スマートフォンやタブレット端末からでも利用可能ですか？
+              </p>
+            </div>
+            <p>
+              インターネットに接続されているスマートフォンやタブレット端末からでも、ご利用頂けます。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                オンライン処方を利用できないbrowser(ブラウザ)はありますか？
+              </p>
+            </div>
+            <p>
+              iPhoneやAndroidの標準ブラウザでもある「Safari」や「Google
+              Chrome」であれば問題ありませんが、スマホ広告をブロックするブラウザアプリ「Adblock
+              Browser」をご使用の場合はシステムが正常に機能しなくなるため、ご利用いただけませんのでご注意下さい。<br />※「Mozilla
+              Firefox」「Microsoft Edge」も利用可能です。
+            </p>
+          </div>
+        </div>
+        <button class="w-100 bg-danger border-danger py-2 text-white fw-bold">
+          費用（薬代や送料）について
+        </button>
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                直接来院した場合とは薬の値段は変わりますか？
+              </p>
+            </div>
+            <p>
+              お薬代は、ご来院された場合とまったく同じ価格なので、ご安心ください。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">送料はいくらかかりますか？</p>
+            </div>
+            <p>
+              1回で１万円以上処方の場合には、送料は無料です。
+              処方合計額が1万円以下の場合の送料は、「送料とお支払い方法」をご確認ください。<br />※代金引換をご希望の方は、処方合計額に関わらず代引き手数料396円(税込)がかかります。<br />※銀行振込の場合、振込手数料は患者様のご負担となりますのでご了承下さい。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                薬代・送料以外でかかる費用はありますか？
+              </p>
+            </div>
+            <p>
+              電話でのオンライン診察の場合でも、診察料は無料です。かかる費用は、お薬代と送料のみです。<br />※1万円以上処方の場合は、送料無料です。<br />※代金引換をご希望の方は、代引き手数料396円(税込)がかかります。<br />※銀行振込の場合、振込手数料は患者様のご負担となりますのでご了承下さい。
+            </p>
+          </div>
+        </div>
+        <button class="w-100 bg-danger border-danger py-2 text-white fw-bold">
+          オンライン診療の薬の受け取りについて
+        </button>
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                オンライン処方の場合は、薬はどうやって受け取るのですか？
+              </p>
+            </div>
+            <p>
+              手渡しの宅急便又は、ポスト投函にてお薬を郵送致します。郵便局のゆうパック又はゆうパケットを利用しております。
+              【ゆうパケット】<br />ポストに投函されます。手渡しの配達は行われません。「日時指定がない、かつ、荷物の厚みが1cm以下」の場合はゆうパケットにて配送いたします。送料は全国一律250円（税込）です。
+              【ゆうパック】<br />通常の宅急便です。手渡しでの配達が行われ受け取りのサインが必要で、日時指定が可能です。「日時指定がされた」または「荷物の厚みが1cm以上」の場合はゆうパックにて配送いたします。送料は地域によって異なります。「送料とお支払い方法について」をご確認ください。
+              ※どちらも発送後、ご登録されたメールアドレスに問い合わせ番号を添付して発送のご連絡を送信させていただきますので荷物の追跡は可能です。
+              ※お薬代10,000円以上（税込）は送料無料です。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">薬は何日くらいで届きますか？</p>
+            </div>
+            <p>
+              配送先のご住所によりますが目安は決済後1～4日後です。※離島などはより日数がかかる可能性があります。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                土日や祝日をはさんだ場合は薬が届くまで日数がかかりますか？
+              </p>
+            </div>
+            <p>
+              電話でのオンライン診察の場合でも、診察料は無料です。かかる費用は、お薬代と送料のみです。<br />※1万円以上処方の場合は、送料無料です。<br />※代金引換をご希望の方は、代引き手数料396円(税込)がかかります。<br />※銀行振込の場合、振込手数料は患者様のご負担となりますのでご了承下さい。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                GW・お盆・年末年始といった大型連休中でも薬を送ってもらえますか？
+              </p>
+            </div>
+            <p>
+              【GWとお盆】<br />GWとお盆の時期は休みなく毎日診療しておりますのでオンライン処方可能です。<br />また、日本郵便のサービス「ゆうパック」「ゆうパケット」は365日毎日配達が行われておりますので、お薬のお届けも可能です。
+              <br /><br />【年末年始】<br />誠に申し訳ありませんが、年末年始の休診日は、オンライン診療もお休みさせて頂きます。余裕を持って診療予約をして頂けますと幸いです。
+            </p>
+          </div>
+        </div>
+        <button class="w-100 bg-danger border-danger py-2 text-white fw-bold">
+          新規登録（アカウント登録）について
+        </button>
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                診察券がなくなってカルテ番号も分からないのですが利用できますか？
+              </p>
+            </div>
+            <p>
+              利用可能です。<br />「アカウント新規登録」にてメールアドレス入力し送信後、ご入力いただいたアドレスにメールが届きます。
+              そのメールにある新規アカウント登録画面に移行するURLにアクセスしていただきカルテ番号は空白のまま、その他必要事項をご入力いただきますのでそれらの情報から該当するカルテを検索いたします。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                全く初めて（通院歴無し）なのですが利用できますか？
+              </p>
+            </div>
+            <p>
+              現在は、来院歴が無くても新規登録を受付けておりますので、ご利用いただけます。<br />オンラインでの問診票と電話問診にて現在の健康状態や使用中のお薬を確認させていただきます。<br />その際に医師が「来院していただき健康状態を確認しないと処方不可」と判断する場合もあることをご了承下さい。
+            </p>
+          </div>
+        </div>
+        <button class="w-100 bg-danger border-danger py-2 text-white fw-bold">
+          新規登録（アカウント登録）について
+        </button>
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                時間がないので今予約を入れてすぐに問診を受けたいのですが対応可能ですか？
+              </p>
+            </div>
+            <p>
+              ご対応可能です。<br />予約時間の選択画面で「今すぐ希望」という項目があるのでこちらをお選び下さい。
+              ※大変申し訳ございませんが、混み合っている時はお待ちいただく場合がございます。あらかじめご了承ください。<br />※診療時間の終了30分前からは予約は出来ません。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                全く初めて（通院歴無し）なのですが利用できますか？
+              </p>
+            </div>
+            <p>
+              「患者様のご本人確認」<br />　↓<br />「問診票に沿って現在の健康状態の確認」<br />　↓<br />「現在使用中のお薬の確認」<br />　↓<br />「特に問題がなければご希望のお薬と数量を聞いて終了」<br />となります。スムーズに進めば1～2分ほどで終わります。
+            </p>
+          </div>
+        </div>
+        <button class="w-100 bg-danger border-danger py-2 text-white fw-bold">
+          お薬の発送先・受け取り方法について
+        </button>
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                配送についてですが日時指定は可能ですか？
+              </p>
+            </div>
+            <p>
+              日時指定可能です。通常の宅急便（ゆうパック・手渡し）での発送となります。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                なかなか荷物の受け取りが出来ないのですが、いい方法はありますか？
+              </p>
+            </div>
+            <p>
+              発送荷物が1cm以下の場合は、ポスト投函（ゆうパケット）での発送が可能です。送料は日本全国一律250円（税込）です。
+              また外側からは薬と分からないように職場へお届けすることや、お近くの郵便局留をご選択頂くことも可能です。<br />※発送荷物が、1cm以上となる場合には、通常の宅急便での発送となります。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">職場に送ってもらうことは可能ですか？</p>
+            </div>
+            <p>送り先に該当患者様のお名前を明記する条件で可能です。</p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                マンションの宅配ボックスに届けてもらうことは可能ですか？
+              </p>
+            </div>
+            <p>
+              恐れ入りますが、委託の配送業者様（日本郵便）の範疇になりますので当院が対応可能とは申し上げられません。配送伝票の備考欄に「宅配ボックスへの配達希望」と書くことまでしかできないこと、ご理解ください。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                家族に知られないように受け取る方法はありますか？
+              </p>
+            </div>
+            <p>
+              (1) 配送元と配送品名を変更することができます。<br />※配送元「浜松町第一クリニック」⇒「HM商品センター」、配送品名「医薬品」⇒「筆記用具」に変更することが可能です。
+              (2) 配送先を「郵便局留め」にする方法があります。<br />ご希望の際は決済時の備考欄に「郵便局留め希望」の旨と、受け取りたい郵便局の「郵便番号」と「郵便局名」を必ずご入力ください。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                パートナー（女性）に送ってもらうことは可能ですか？
+              </p>
+            </div>
+            <p>
+              「〇〇様方」を了承してしまうと、問診を受けた患者様以外の方の誰にでもお送りすることが可能となってしまうため郵送できません。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">コンビニでの受け取りはできますか？</p>
+            </div>
+            <p>
+              申し訳ございませんができかねます。<br />ご自宅への配送が難しい場合は「郵便局留め」をご利用ください。<br />ご希望の際は決済時の備考欄に「郵便局留め希望」の旨と、受け取りたい郵便局の「郵便番号」と「郵便局名」を必ずご入力ください。
+            </p>
+          </div>
+        </div>
+        <button class="w-100 bg-danger border-danger py-2 text-white fw-bold">
+        お支払いについて
+        </button>
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                支払いは、どのようにするのでしょうか？
+              </p>
+            </div>
+            <p>
+             「クレジットカード」・「銀行振込」・「代金引換」の3つの方法があります。クレジットカードは［VISA、MASTER、JCB、DINERS、AMEX］がご利用いただけます。<br>※申し訳ございませんが、コンビニ決済や各種キャッシュレス決済は対応しておりません。</p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                クレジットカード決済の安全性は問題ないのでしょうか？
+              </p>
+            </div>
+            <p>
+            コンビニなどでも広く利用されている｢GMOイプシロン株式会社」 の決済代行サービスを利用しております。<br>クレジットカード決済を選択した場合、イプシロン決済画面へ移動いたします。<br>送信される際にはSSL（128bit）による暗号化通信で行い、クレジットカード情報は当院では保有せず、同社で厳重に管理されます。
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                クレジットカードの明細にはどのように表記されますか？
+              </p>
+            </div>
+            <p>
+             「浜松町第一クリニック」と表記されます。
+            </p>
+          </div>
+        </div>
+        <button class="w-100 bg-danger border-danger py-2 text-white fw-bold">
+          トラブルシューティング
+        </button>
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex flex-column gap-3 bg-white py-3 px-2">
+            <div class="d-flex gap-2">
+              <div class="red-circle fs-6" style="width: 34px; height: 34px">
+                Q
+              </div>
+              <p class="fw-bold fs-6">
+                電話問診後に薬の種類や数量を変更したいのですがどうすればよいですか？
+              </p>
+            </div>
+            <p>
+           お電話にて承ります。オンライン処方システム内（マイページ）で患者様側から変更することはできません。
+            </p>
+          </div>
+          
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <div class="footer-box">
+      <div class="container">
+        <div class="footer-links text-center">
+          <a href="#">当院について</a> | <a href="#">診療メニュー</a> |
+          <a href="#">診療</a> | <a href="#">院長紹介</a> |
+          <a href="#">診療時間</a> | <a href="#">よくあるご質問</a> |
+          <a href="#">診察</a> | <a href="#">地図・アクセス</a> |
+          <a href="#">ログイン</a> | <a href="#">問診票ダウンロード</a> |
+          <a href="#">よくあるご質問</a> | <a href="#">お問合わせ</a> |
+          <a href="#">医療機器</a> | <a href="#">運営体制</a> |
+          <a href="#">診療科</a> |
+          <a href="#">サイトマップ</a>
+        </div>
+        <div class="copyright">
+          Copyright © 2025 東京第一クリニック All Rights Reserved.
+        </div>
+        <div class="d-flex justify-content-center gap-2 d-sm-none m-1">
+          <button class="btn-prim">料金表・診療時間</button>
+          <button class="btn-prim">郵送処方</button>
+          <button class="btn-prim">アクセス ・TEL</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>

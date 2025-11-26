@@ -126,3 +126,33 @@ Category Button
                 </button>
 
 <!--================ End Section ================ -->
+
+
+ <!-- Header Title -->
+            <div
+              class="d-lg-flex d-none flex-column px-2 py-4"
+              style="background-color: #d32f2f"
+            >
+              <div class="text-main fs-3 text-center">
+                <h2 class="d-inline-block bg-white p-2 fw-bold">
+                  オンライン診療（郵送処方）
+                </h2>
+              </div>
+              <p class="text-white text-lg-center">
+                １万円以上で送料無料。来院歴が無くてもOK。即日配送。国内正規品のみ。土日も発送。
+              </p>
+            </div>
+            <div class="d-flex d-lg-none flex-column gap-2">
+              <button class="btn-prim">オンライン診療（郵送処方）</button>
+              <p class="text-prim fw-bold">
+                １万円以上で送料無料。来院歴が無くてもOK。 <br />
+                即日配送。国内正規品のみ。土日も発送。
+              </p>
+            </div>
+
+<!-- Table --> 
+<div class="table-responsive">
+                <table
+                  class="table table-bordered align-middle text-center"
+                  style="border-color: #ffa9a9 !important; border-width: 1px"
+                >

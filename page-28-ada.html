@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>東京第一クリニック - オンライン問診</title>
+    <link rel="icon" type="image/svg+xml" href="./images/favicon.svg" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      rel="stylesheet"
+    />
+    <!-- Added Noto Sans JP Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="./style/page-hero.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="container">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+          <a href="#" class="navbar-brand">
+            <img src="./images/header.svg" alt="Tokyo First Clinic Logo" />
+          </a>
+          <div class="d-flex justify-content-end gap-3">
+            <button class="btn-online d-none d-sm-block">オンライン診療</button>
+
+            <button class="btn-menu">
+              メニュー
+              <img src="./images/navigation.png" />
+            </button>
+          </div>
+          <div class="d-flex justify-content-center d-sm-none w-100 mt-3">
+            <button class="btn-online">オンライン診療</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Main Content Section -->
+    <main class="container">
+      <!-- Hero Section -->
+      <div class="d-flex flex-column gap-2">
+        <div class="d-flex flex-column gap-2" style="background-color: #fff2f2">
+          <div class="d-lg-flex gap-2">
+            <img
+              src="images/clinic/hero_lg.png"
+              alt="hero large image"
+              height="454"
+              width="auto"
+              class="d-none d-lg-block pt-3 ps-5"
+            />
+            <div
+              class="d-flex flex-column red-card gap-3 align-items-center flex-fill justify-content-center rounded-lg-start-pill"
+            >
+              <p class="fs-lg-2 fs-5">AGA治療薬</p>
+              <p class="fs-4 fw-bold fs-lg-1">オンライン処方</p>
+              <p
+                class="fs-5 fs-lg-2 text-black bg-white px-3 py-1 rounded-pill"
+              >
+                電話の問診で即日配送
+              </p>
+            </div>
+          </div>
+          <img
+            src="images/clinic/hero.png"
+            alt="hero image"
+            width="343"
+            height="309"
+            class="d-lg-none"
+          />
+        </div>
+
+        <div
+          class="d-flex flex-column gap-3 text-lg-center align-items-lg-center mb-3"
+        >
+          <p class="text-secondary fw-bold fs-lg-3">
+            新東京クリニック䛿グループ全医院䛻䛶<br /><span
+              class="text-danger"
+              >国内正規品</span
+            > AGA治療薬を
+<br />予約不要䛷䛩䛠䛻院内処方䛧䜎䛩。<br /><span
+              class="text-danger"
+              >オンラインでも処方料金は同じ！</span
+            >
+          </p>
+          <p class="fw-bold">
+           安値を売り䛻䛧䛯クリニック䛷処方䛥れ䛶いる海外製䛾厚生省　<br>
+“未認可 “䛾薬䛿一切取り扱䛳䛶い䜎䛫ん！
+          </p>
+         
+          
+          <div class="d-flex flex-column gap-2">
+            <div class="d-flex gap-3 justify-content-center">
+              <div class="red-circle" style="width: 95px; height: 95px">
+              通院不要
+              </div>
+              <div class="red-circle" style="width: 95px; height: 95px">
+問診䛿 <br>
+電話䛷 <br>
+OK
+              </div>
+              <div class="red-circle" style="width: 95px; height: 95px">
+              即日配送 <br>
+＆ <br>
+最短翌日 <br>
+到着 
+              </div>
+              <div class="red-circle" style="width: 95px; height: 95px">
+                医師䛜 <br>
+丁寧䛻 <br>
+診察
+
+              </div>
+              <div class="red-circle" style="width: 95px; height: 95px">
+            国内 <br>
+メーカー <br>
+䛺䛾䛷 <br>
+安心
+              </div>
+            </div>
+            <p class="fw-bold">※䛤希望䛾方䛿通院䜒可能䛷䛩！</p>
+            <button class="btn-prim">今䛩䛠1分䛷無料登録</button>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column gap-2 px-3 py-3 align-items-lg-center"
+          style="background-color: #fff2f2"
+        >
+        <p class="fw-bold fs-4 text-center">ED薬䛾価格䛻䛴い䛶 <br>
+【続䛡や䛩い料金設定】</p>
+          <div class="d-flex flex-column flex-lg-row gap-2 justify-content-center">
+            
+            <div class="d-flex flex-column gap-1 flex-lg-fill">
+              <p class="text-secondary fw-medium fs-6">
+                国内正規品AGA治療薬（先発・後発）
+              </p>
+              <div class="d-flex gap-3 align-items-center">
+                <div
+                  class="red-circle fw-medium fs-3"
+                  style="width: 66px; height: 66px"
+                >
+                  28錠
+                </div>
+                <div class="d-flex text-secondary align-items-center gap-1">
+                  <p class="fw-bold fs-4">3,500〜8,200</p>
+                  <div class="d-flex flex-column">
+                    <p class="fs-7">税込</p>
+                    <p class="fs-5">円</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+          
+          <!-- Add equation here-->
+          <p>例：<br>
+フィナステリド錠 1mg「サワイ」 28錠䛰䛸 <br>
+1セット4,300円＋送料250円＝ 4,550円（税込）</p>
+<p>䛚得䛺割引X䜒実施中！薬品䛻より割引額䛿異䛺り䜎䛩。</p>
+<p>例：<br>
+フィナステリド錠 1mg「サワイ」 䛾場合 <br>
+5セット以上䛿1セット（28錠）4,300円 ➟ 4,000円䛻割引 <br>
+10セット以上䛿1セット（28錠）4,300円 ➟ 3,700円䛻割引</p>
+<p><span class="text-danger fs-4 text-center">1万円以上䛾䛚買い求䜑䛷送料無料！</span> <br>
+※注意：割引後䛾値段䛜1万円以下䛾場合、送料250円（税込）䛜発生 <br>
+ 例：（1,000-100）円×10=9,000</p>
+          <button class="btn-prim">価格詳細</button>
+          <div class="d-flex flex-column gap-2">
+            <p class="text-secondary">各社クリジットカード・代引䛝・銀行振込</p>
+            <div class="d-flex gap-2">
+              <img src="images/cards/amex.png" alt="" class="img-fluid">
+              <img src="images/cards/dci.png" alt="" class="img-fluid">
+              <img src="images/cards/jcb.png" alt="" class="img-fluid">
+              <img src="images/cards/master-card.png" alt="" class="img-fluid">
+              <img src="images/cards/visa.png" alt="" class="img-fluid">
+            </div>
+          </div>
+        </div>
+
+        <!-- Six Step process -->
+        <div class="d-flex flex-column gap-3 text-secondary">
+          <h2 class="fw-bold fs-5 text-lg-center">
+            当社の
+オンライン処方箋サービスが選ばれる理由
+          </h2>
+          <!-- Step 01 -->
+          <div class="d-flex flex-column gap-2 flex-lg-row step-card">
+            <img
+              src="images/clinic/6-step/step-1.png"
+              alt="Step 1"
+              class="img-fluid object-fit-cover"
+            />
+            <div class="d-flex flex-column gap-1">
+              <div class="d-flex gap-2 align-items-center">
+                <div
+                  class="red-circle fw-medium fs-5"
+                  style="width: 54px; height: 54px"
+                >
+                  01
+                </div>
+                <p class="fw-bold">通院必要なし</p>
+              </div>
+              <p class="fw-medium">
+                国内メーカー䛷䛿最安値䛻䛺り䜎䛩。
+下記䛾割引䜒実施中䛷䛩。<br>
+・10錠以上䛚買い求䜑䛷、 1錠当䛯り100円割引 <br>
+・30錠以上䛚買い求䜑䛷、 1錠当䛯り200円割引
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 02 -->
+          <div class="d-flex flex-column gap-2 flex-lg-row step-card">
+            <div class="d-lg-flex d-none flex-column gap-1">
+              <div class="d-flex gap-2 align-items-center">
+                <div
+                  class="red-circle fw-medium fs-5"
+                  style="width: 54px; height: 54px"
+                >
+                  02
+                </div>
+                <p class="fw-bold">どこでも好きな時間に予約OK</p>
+              </div>
+              <p class="fw-medium">
+                <span class="text-danger">「今すぐ」の予約も可能</span
+                >なので、空いた時間にすぐ電話問診を受けられる
+              </p>
+            </div>
+            <img
+              src="images/clinic/6-step/step-2.png"
+              alt="Step 2"
+              class="img-fluid flex-fill object-fit-cover"
+            />
+            <div class="d-flex d-lg-none flex-column gap-1">
+              <div class="d-flex gap-2 align-items-center">
+                <div
+                  class="red-circle fw-medium fs-5"
+                  style="width: 54px; height: 54px"
+                >
+                  02
+                </div>
+                <p class="fw-bold">どこでも好きな時間に予約OK</p>
+              </div>
+              <p class="fw-medium">
+                <span class="text-danger">「今すぐ」の予約も可能</span
+                >なので、空いた時間にすぐ電話問診を受けられる
+              </p>
+            </div>
+          </div>
+          <!-- Step 03 -->
+          <div class="d-flex flex-column gap-2 flex-lg-row step-card">
+            <img
+              src="images/clinic/6-step/step-3.png"
+              alt="Step 3"
+              class="img-fluid flex-fill object-fit-cover"
+            />
+            <div class="d-flex flex-column gap-1">
+              <div class="d-flex gap-2 align-items-center">
+                <div
+                  class="red-circle fw-medium fs-5"
+                  style="width: 54px; height: 54px"
+                >
+                  03
+                </div>
+                <p class="fw-bold">お支払い方法が選べる</p>
+              </div>
+              <p class="fw-medium">各社クレジットカード・代引き・銀行振込</p>
+              <div class="d-flex gap-2">
+                <img
+                  src="images/cards/visa.png"
+                  alt="Visa logo"
+                  width="52.6"
+                  height="36.12"
+                />
+                <img
+                  src="images/cards/master-card.png"
+                  alt="MasterCard logo"
+                  width="52.6"
+                  height="36.12"
+                />
+                <img
+                  src="images/cards/jcb.png"
+                  alt="JCB logo"
+                  width="
+                52.6"
+                  height="36.12"
+                />
+
+                <img
+                  src="images/cards/dci.png"
+                  alt="Diners Club logo"
+                  width="52.6"
+                  height="36.12"
+                />
+                <img
+                  src="images/cards/amex.png"
+                  alt="American Express logo"
+                  width="52.6"
+                  height="36.12"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 04 -->
+          <div class="d-flex flex-column gap-2 flex-lg-row step-card">
+            <div class="d-none d-lg-flex flex-column gap-1">
+              <div class="d-flex gap-2 align-items-center">
+                <div
+                  class="red-circle fw-medium fs-5"
+                  style="width: 54px; height: 54px"
+                >
+                  04
+                </div>
+                <p class="fw-bold">厚労省䛛ら製造承認を得䛯
+「本物」䛾䜏使用</p>
+              </div>
+              <p class="fw-medium">
+                安値を売り䛻䛧䛯クリニック䛷 <br>
+処方䛥れ䛶いる海外製䛾 <br>
+厚労省 "未認可" 䛾薬䛿一切 <br>
+取り扱䛳䛶い䜎䛫ん！
+
+              </p>
+            </div>
+            <img
+              src="images/clinic/6-step/step-4.png"
+              alt="Step 4"
+              class="img-fluid flex-fill object-fit-cover"
+            />
+            <div class="d-flex d-lg-none flex-column gap-1">
+              <div class="d-flex gap-2 align-items-center">
+                <div
+                  class="red-circle fw-medium fs-5"
+                  style="width: 54px; height: 54px"
+                >
+                  04
+                </div>
+                <p class="fw-bold">希望の場所と時間にお届け</p>
+              </div>
+              <p class="fw-medium">
+                自宅や指定場所に都合の良い日時でお届け可！<span
+                  class="text-danger"
+                  >（〇〇様方は不可）</span
+                ><br /><span class="text-danger">郵便局留め</span
+                >受け取りもOK！<br />ポスト投函も可能！（厚さ制限あり）
+              </p>
+            </div>
+          </div>
+
+          <!-- Step 05 -->
+          <div class="d-flex flex-column gap-2 flex-lg-row step-card">
+            <img
+              src="images/clinic/6-step/step-5.png"
+              alt="Step 5"
+              class="img-fluid flex-fill object-fit-cover"
+            />
+            <div class="d-flex flex-column gap-1">
+              <div class="d-flex gap-2 align-items-center">
+                <div
+                  class="red-circle fw-medium fs-5"
+                  style="width: 54px; height: 54px"
+                >
+                  05
+                </div>
+                <p class="fw-bold">診察料、予約料が無料</p>
+              </div>
+              <p class="fw-medium">
+                <span class="text-danger">１万円以上で送料無料！</span
+                ><br />※代引きは396円の手数料がかかります。
+              </p>
+            </div>
+          </div>
+          <!-- Step 06 -->
+          <div class="d-flex flex-column gap-2 flex-lg-row step-card">
+            <div class="d-lg-flex d-none flex-column gap-1">
+              <div class="d-flex gap-2 align-items-center">
+                <div
+                  class="red-circle fw-medium fs-5"
+                  style="width: 54px; height: 54px"
+                >
+                  06
+                </div>
+                <p class="fw-bold">誰にも気づかれずに<br />お薬を受け取れる</p>
+              </div>
+              <p class="fw-medium">
+                「配送元を<span class="text-danger">HM商品センター</span
+                >」に「配送品名を筆記用具」に変更可能！<br /><span
+                  class="text-danger"
+                  >DM送付も一切ない</span
+                >ので安心！
+              </p>
+            </div>
+            <img
+              src="images/clinic/6-step/step-6.png"
+              alt="Step 6"
+              class="img-fluid flex-fill object-fit-cover"
+            />
+            <div class="d-flex d-lg-none flex-column gap-1">
+              <div class="d-flex gap-2 align-items-center">
+                <div
+                  class="red-circle fw-medium fs-5"
+                  style="width: 54px; height: 54px"
+                >
+                  06
+                </div>
+                <p class="fw-bold">誰にも気づかれずに<br />お薬を受け取れる</p>
+              </div>
+              <p class="fw-medium">
+                「配送元を<span class="text-danger">HM商品センター</span
+                >」に「配送品名を筆記用具」に変更可能！<br /><span
+                  class="text-danger"
+                  >DM送付も一切ない</span
+                >ので安心！
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex justify-content-center">
+        <button class="btn-prim ">今䛩䛠1分䛷無料登録</button>
+        </div>
+        <div
+          class="d-flex flex-column gap-1 justify-content-center align-items-center px-4 py-3"
+          style="background-color: #ffdada"
+        >
+          <p class="fs-5 text-danger">処方薬価格</p>
+          <button class="btn-prim-white">価格詳細はこちら</button>
+        </div>
+        <!-- Five Step Process -->
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex flex-column text-center text-secondary">
+            <h2 class="fs-4 fw-bold">５ステップ</h2>
+            <p class="fw-bold">
+              一度利用して慣れれば <br />
+              「予約」→「電話問診」→「決済」まで10分かからず完了！
+            </p>
+          </div>
+          <div class="d-flex flex-column gap-2">
+            <!-- Step 1-->
+            <div class="d-flex flex-column gap-2 flex-lg-row step-card m-2">
+              <div class="d-flex d-lg-none gap-2 align-items-center px-2 py-2">
+                <div
+                  class="red-circle fs-5 fw-medium"
+                  style="width: 54px; height: 54px"
+                >
+                  01
+                </div>
+                <p class="fw-bold">新規登録</p>
+              </div>
+              <img
+                src="images/clinic/5-step/step-1.png"
+                alt="step 1"
+                class="img-fluid object-fit-cover"
+              />
+              <div class="d-flex flex-column justify-content-lg-between">
+                <div
+                  class="d-none d-lg-flex gap-2 align-items-center px-2 py-2"
+                >
+                  <div
+                    class="red-circle fs-5 fw-medium"
+                    style="width: 54px; height: 54px"
+                  >
+                    01
+                  </div>
+                  <p class="fw-bold">新規登録</p>
+                </div>
+                <p class="text-main">
+                  まずは、ここに「メールアドレス」を入力して「送信」その後のアカウント登録のメールが送信されますのでご確認下さい。
+                </p>
+                <button class="btn-prim">新規登録ページへ</button>
+              </div>
+            </div>
+            <!-- Step 2-->
+            <div class="d-flex flex-column gap-2 flex-lg-row step-card m-2">
+              <div class="d-flex d-lg-none gap-2 align-items-center px-2 py-2">
+                <div
+                  class="red-circle fs-5 fw-medium"
+                  style="width: 54px; height: 54px"
+                >
+                  02
+                </div>
+                <p class="fw-bold">必要事項の入力</p>
+              </div>
+              <img
+                src="images/clinic/5-step/step-2.png"
+                alt="step 2"
+                class="img-fluid object-fit-cover"
+              />
+              <div class="d-flex flex-column">
+                <div
+                  class="d-none d-lg-flex gap-2 align-items-center px-2 py-2"
+                >
+                  <div
+                    class="red-circle fs-5 fw-medium"
+                    style="width: 54px; height: 54px"
+                  >
+                    02
+                  </div>
+                  <p class="fw-bold">必要事項の入力</p>
+                </div>
+                <p class="text-main">
+                  通院歴の有無・パスワード設定・電話番号・お名前住所等必要事項をご入力ください。<br />通院歴の無い方は問診票にもご入力いただきます。
+                </p>
+              </div>
+            </div>
+            <!-- Step 3-->
+            <div class="d-flex flex-column gap-2 flex-lg-row step-card m-2">
+              <div class="d-flex d-lg-none gap-2 align-items-center px-2 py-2">
+                <div
+                  class="red-circle fs-5 fw-medium"
+                  style="width: 54px; height: 54px"
+                >
+                  03
+                </div>
+                <p class="fw-bold">診察予約</p>
+              </div>
+              <img
+                src="images/clinic/5-step/step-3.png"
+                alt="step 3"
+                class="img-fluid object-fit-cover"
+              />
+              <div class="d-flex flex-column">
+                <div
+                  class="d-none d-lg-flex gap-2 align-items-center px-2 py-2"
+                >
+                  <div
+                    class="red-circle fs-5 fw-medium"
+                    style="width: 54px; height: 54px"
+                  >
+                    03
+                  </div>
+                  <p class="fw-bold">診察予約</p>
+                </div>
+                <p class="text-main">
+                  ご希望の時間帯を選択し、診察予約を取ります。<br />ご予約の時間に当院よりお電話いたします。<br />お急ぎの方は「今すぐ！」をご選択下さい。
+                </p>
+              </div>
+            </div>
+            <!-- Step 4-->
+            <div class="d-flex flex-column gap-2 flex-lg-row step-card m-2">
+              <div class="d-flex d-lg-none gap-2 align-items-center px-2 py-2">
+                <div
+                  class="red-circle fs-5 fw-medium"
+                  style="width: 54px; height: 54px"
+                >
+                  04
+                </div>
+                <p class="fw-bold">電話問診・処方箋</p>
+              </div>
+              <img
+                src="images/clinic/5-step/step-4.png"
+                alt="step 4"
+                class="img-fluid object-fit-cover"
+              />
+              <div class="d-flex flex-column">
+                <div
+                  class="d-none d-lg-flex gap-2 align-items-center px-2 py-2"
+                >
+                  <div
+                    class="red-circle fs-5 fw-medium"
+                    style="width: 54px; height: 54px"
+                  >
+                    04
+                  </div>
+                  <p class="fw-bold">電話問診・処方箋</p>
+                </div>
+                <p class="text-main">
+                  お電話での医師との電話問診終了後メールが届きますのでご確認いただきご購入手続きに移ります。
+                  （問診内容は該当患者様の電子カルテに音声データとして全て保存させていただいております。）
+                </p>
+              </div>
+            </div>
+            <!-- Step 5-->
+            <div class="d-flex flex-column flex-lg-row step-card m-2">
+              <div class="d-flex d-lg-none gap-2 align-items-center px-2 py-2">
+                <div
+                  class="red-circle fs-5 fw-medium"
+                  style="width: 54px; height: 54px"
+                >
+                  05
+                </div>
+                <p class="fw-bold">処方薬の発送</p>
+              </div>
+              <img
+                src="images/clinic/5-step/step-5.png"
+                alt="step 5"
+                class="img-fluid object-fit-cover"
+              />
+              <div class="d-flex flex-column">
+                <div
+                  class="d-none d-lg-flex gap-2 align-items-center px-2 py-2"
+                >
+                  <div
+                    class="red-circle fs-5 fw-medium"
+                    style="width: 54px; height: 54px"
+                  >
+                    05
+                  </div>
+                  <p class="fw-bold">処方薬の発送</p>
+                </div>
+                <p class="text-main">
+                  ご指定の場所（郵便局留めも可能）・日時に処方薬をお届けいたします。<br />配送元「ＨＭ商品センター」、品名「筆記用具」に変更可能です。<br />発送は決済完了後、最短で当日、遅くても翌日に発送します。（土日も発送可能）
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column gap-2 align-items-center justify-content-center text-white"
+          style="
+            padding: 40px;
+            height: 481px;
+            background: linear-gradient(
+                rgba(255, 0, 0, 0.5),
+                rgba(255, 0, 0, 0.5)
+              ),
+              url('/images/clinic/5-step/step-4.png') center/cover no-repeat;
+          "
+        >
+          <div class="d-flex flex-column gap-2">
+            <h2 class="fw-medium fs-5 text-lg-center fs-lg-3">
+              まずは、アカウント登録に<br />進みましょう
+            </h2>
+            <p>
+              国内正規品のED治療薬・AGA治療薬の処方をいたします。 <br />
+              <br />
+              海外製で厚労省 "未認可" の薬は取り扱っていませんのでご安心下さい。
+            </p>
+          </div>
+          <div class="d-lg-flex gap-3">
+            <div class="d-flex flex-column gap-2">
+              <h2 class="fs-5">アカウント登録はこちら</h2>
+              <button class="btn-prim-white">新規アカウント登録</button>
+            </div>
+            
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column gap-1 justify-content-center align-items-center px-4 py-3"
+          style="background-color: #ffdada"
+        >
+          <p class="fs-5 text-danger">処方薬価格</p>
+          <button class="btn-prim-white">価格詳細はこちら</button>
+        </div>
+        <div
+          class="d-flex flex-lg-row flex-column gap-3 py-4 px-2"
+          style="background-color: #fff2f2"
+        >
+          <img
+            src="images/clinic/doctor.png"
+            alt="doctor photo"
+            height="350"
+            width="343"
+          />
+          <div class="d-flex flex-column gap-3">
+            <p class="fs-5 fs-lg-3">浜松町第一クリニック</p>
+            <p class="fs-6">
+              皆様が満足のいく性生活を送ることができますよう全力でサポートいたします。<br />服用することへの抵抗や不安などございましたらご予約は不要ですので最寄りのクリニックまでお気軽にご来院ください。
+            </p>
+            <button class="btn-prim">各院 院長紹介</button>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-3">
+          <h2 class="fw-bold fs-4 text-center">資料請求</h2>
+          <p>
+            「<span class="text-danger">メールアドレスが無い</span>」「<span
+              class="text-danger"
+              >インターネットが不得意</span
+            >」等々でお困りの方向けにシステムを利用しないで処方を受けるための資料をお送りします。ご希望の方は下記のリンクから発送先情報をご入力ください。
+          </p>
+          <form class="d-flex flex-column gap-2">
+            <label for="postal-code"
+              >郵便番号<span class="text-danger">(必須)</span></label
+            >
+            <div class="row">
+              <div class="col-6">
+                <input
+                  type="text"
+                  id="postal-code"
+                  class="form-control"
+                  placeholder="190"
+                  class="form-control border-bottom border-black"
+                />
+              </div>
+              <div class="col-6">
+                <input
+                  type="text"
+                  id="postal-code"
+                  class="form-control"
+                  placeholder="0012"
+                  class="form-control border-bottom border-black"
+                />
+              </div>
+            </div>
+            <div class="d-flex flex-column">
+              <label for="address"
+                >住所 <span class="text-danger">(必須)</span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="住所"
+                id="address"
+              />
+            </div>
+            <div class="d-flex flex-column">
+              <label for="building-name"
+                >番地・ビル名等 <span class="text-danger">(必須)</span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="住所"
+                id="building-name"
+              />
+            </div>
+            <div class="d-flex flex-column">
+              <label for="name"
+                >お名前<span class="text-danger">(必須)</span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="お名前"
+                id="name"
+              />
+            </div>
+            <div class="d-flex flex-column">
+              <label for="name"
+                >電話番号<span class="text-danger">(必須)</span>
+              </label>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="電話番号"
+                id="name"
+              />
+            </div>
+            <div class="d-flex flex-column">
+              <label for="name"
+                >ご相談内容 <span class="text-danger">(必須)</span>
+              </label>
+              <div class="d-flex gap-2">
+                <input type="checkbox" class="" id="ED" />
+                <label for="ED">勃起不全薬（ED）　</label>
+              </div>
+              <div class="d-flex gap-2">
+                <input type="checkbox" class="" id="AGA" />
+                <label for="ED">男性型脱毛症薬（AGA）</label>
+              </div>
+            </div>
+            <div class="d-flex justify-content-lg-center">
+            <button type="submit" class="btn-prim">入力内容を確認する</button>
+            </div>
+            <p>
+              ※<span class="text-danger">ご自宅にFAXがある場合</span
+              >は「0120-237722」もしくは「03-5777-3729」にご連絡いただきFAX番号をお伝えいただければ資料をFAXで送信することも可能です。
+            </p>
+          </form>
+        </div>
+        <!-- Frequent Questions and Answers -->
+        <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center  gap-3 px-3 py-2" style="background-color: #fff2f2">
+          <div class="d-flex flex-column gap-1">
+            <div class="fs-5 fw-bold">よくあるご質問</div>
+            <button class="btn-prim">質問詳細はこちら</button>
+          </div>
+          <div class="d-flex flex-column gap-3 ">
+            <div class="d-flex flex-column gap-2">
+              <div class="d-flex gap-2">
+                <div
+                  class="red-circle fs-5 fw-medium"
+                  style="width: 34px; height: 34px"
+                >
+                  Q
+                </div>
+                <div class="fw-bold fs-5">オンライン診療を利用するのに必要なものはなんですか?</div>
+              </div>
+              <p>インターネットに接続されているパソコン・スマートフォン・タブレット端末が必要となります。また送受信可能なEメールアドレスが必要となります。</p>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <div class="d-flex gap-2">
+                <div
+                  class="red-circle fs-5 fw-medium"
+                  style="width: 34px; height: 34px"
+                >
+                  Q
+                </div>
+                <div class="fw-bold fs-5">直接来院した場合とは薬の値は変わりますか？</div>
+              </div>
+              <p>お薬代は、<span class="text-danger">ご来院された場合と同じ価格</span>なので、ご安心ください。</p>
+            </div>
+            <div class="d-flex flex-column gap-2">
+              <div class="d-flex gap-2">
+                <div
+                  class="red-circle fs-5 fw-medium"
+                  style="width: 34px; height: 34px"
+                >
+                  Q
+                </div>
+                <div class="fw-bold fs-5">職場に送ってもらうことは可能ですか？</div>
+              </div>
+              <p>送り先に該当患者様のお名前を明記する条件で可能です。（<span class="text-danger">〇〇様方は不可</span>）</p>
+            </div>
+            <div class="d-flex flex-column gap-3 ">
+            <div class="d-flex flex-column gap-2">
+              <div class="d-flex gap-2">
+                <div
+                  class="red-circle fs-5 fw-medium"
+                  style="width: 34px; height: 34px"
+                >
+                  Q
+                </div>
+                <div class="fw-bold fs-5">䛹䛾䛟らい䛷届䛝䜎䛩䛛?</div>
+              </div>
+              <p>13時䜎䛷䛾決済確認䛷即日発送、最短翌日䛚届䛡䛻䛺り
+䜎䛩</p>
+            </div>
+            <div class="d-flex flex-column gap-3 ">
+            <div class="d-flex flex-column gap-2">
+              <div class="d-flex gap-2">
+                <div
+                  class="red-circle fs-5 fw-medium"
+                  style="width: 34px; height: 34px"
+                >
+                  Q
+                </div>
+                <div class="fw-bold fs-5">初䜑䛶䛷䜒処方䛧䛶䜒らえ䜎䛩䛛?</div>
+              </div>
+              <p>䛿い、初診大歓迎䛷䛩！初診䛛らオンライン䛷䛾
+処方可能䛷䛩。
+</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- -->
+        <div class="d-flex flex-column gap-3">
+          <h2 class="fs-5 fw-bold text-center">送料とお支払い方法</h2>
+          <div class="d-flex flex-column gap-1 p-1">
+            <p class="fs-6 px-2 py-1" style="background-color: #fff2f2">送料</p>
+            <div class="d-flex flex-column flex-lg-row gap-2 align-items-stretch">
+              <p
+                class="text-center fs-6 text-white p-2 colored-header "
+                style="background-color: #e57373; "
+              >
+                10,000円（税込）以上の場合
+              </p>
+              <p>
+                <span class="text-danger">送料無料</span
+                ><br />※代引きの場合は別途代引き手数料396円(税込)がかかります。<br />※銀行振込の場合、振込手数料は患者様のご負担となりますのでご了承下さい。
+              </p>
+            </div>
+            <div class="d-flex flex-column gap-2 flex-lg-row align-items-stretch">
+              <p
+                class="text-center fs-6 text-white p-1 colored-header"
+                style="background-color: #e57373; "
+              >
+                10,000円（税込）未満の場合
+              </p>
+              <div class="d-lg-flex flex-lg-column"> <p>
+                「配送日時指定なし」かつ「厚みが1cm以下」の場合は、<span
+                  class="text-danger"
+                  >送料250円(税込)で全国一律配送可能</span
+                >です。<br />※ゆうパケット(ポスト投函方式)でのお届けとなります。<br />「配送日時指定あり」「代引きを利用」「厚みが1cm以上」このいずれかの場合は［ゆうパック］料金表通りの配送となります。
+              </p>
+              <button type="button" class="btn-prim">詳細はこちらから</button></div>
+             
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column gap-3">
+          <div class="d-flex flex-column gap-1 p-1">
+            <p class="fs-6 px-2 py-1" style="background-color: #fff2f2">お支払い方法</p>
+            <div class="d-flex flex-column gap-2 flex-lg-row align-items-stretch">
+      
+              <p
+                class="text-center fs-6 text-white p-1 colored-header"
+                style="background-color: #e57373; "
+              >
+                クレジットカード
+              </p>
+              <p>VISA、MASTER、JCB、DINERS、AMEX</p>
+            </div>
+            <div class="d-flex flex-column gap-2 flex-lg-row align-items-stretch">
+              <p
+                class="text-center fs-6 text-white p-1 colored-header"
+                style="background-color: #e57373; "
+              >
+                代金引換
+              </p>
+              <p>代引き手数料396円(税込)</p>
+            </div>
+            <div class="d-flex flex-column gap-2 flex-lg-row align-items-stretch">
+              <p
+                class="text-center fs-6 text-white p-1 colored-header"
+                style="background-color: #e57373; "
+              >
+                銀行振込
+              </p>
+              <p>
+                振込確認後の発送となります。<br />振込手数料は患者様のご負担となりますのでご了承下さい。
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="d-flex flex-column gap-1 justify-content-center align-items-center px-4 py-3"
+          style="background-color: #ffdada"
+        >
+          <p class="fs-5 text-danger">処方薬価格</p>
+          <button class="btn-prim-white">価格詳細はこちら</button>
+        </div>
+        <div class="d-flex flex-column gap-2 px-2 py-4" style="background-color: #fff2f2">
+          <div class="d-flex flex-column">
+            <h2 class="text-secondary text-center fw-bold fs-4">
+              アカウント登録
+            </h2>
+            <p class="text-secondary">
+              <span class="text-danger">◆来院歴のない初診の方もＯＫ◆</span
+              ><br />オンライン処方のアカウントに登録するご希望のメールアドレスをご記入ください。<br />※「迷惑メール設定」をしている場合は「@hama1-cl.jp」からのメールを受信できるように設定をお願いします。
+            </p>
+            <button class="btn-prim">新規登録ページへ</button>
+          </div>
+
+          <p class="text-secondary">
+            <span class="text-danger">◆docomoメールの場合の注意点◆</span
+            ><br />メールアドレスを入力して送信後、当院からのメールが届かない場合は、パソコンからのメールを拒否設定してる可能性が高いです。解除する方法は以下のNTTドコモの公式サイトをご参考下さい。<br />携帯・PHS／パソコンなどのメール設定｜NTT
+            docomo
+            「メールアドレスが無い」「インターネットが不得意で登録が上手くいかない」でお困りの方はシステムを利用しないで処方を受けるための資料をお送りします。
+          </p>
+          <button class="btn-prim">資料請求はこちら</button>
+        </div>
+
+        <div class="py-4 px-2 text-lg-center">
+          フリーダイヤル 0120-237722　<br />TEL 03-5777-3729<br />〒105-0013　<br />東京都港区浜松町1-22-7
+          鶴栄ビル5階<br />JR「浜松町駅北口」より徒歩1分、文化放送ビルのすぐ裏。<br />URL: https://www.hama1-cl.jp/
+        </div>
+      </div>
+    </main>
+  </body>
+  <footer>
+    <div class="footer-box">
+      <div class="container">
+        <div class="footer-links text-center">
+          <a href="#">当院について</a> | <a href="#">診療メニュー</a> |
+          <a href="#">診療</a> | <a href="#">院長紹介</a> |
+          <a href="#">診療時間</a> | <a href="#">よくあるご質問</a> |
+          <a href="#">診察</a> | <a href="#">地図・アクセス</a> |
+          <a href="#">ログイン</a> | <a href="#">問診票ダウンロード</a> |
+          <a href="#">よくあるご質問</a> | <a href="#">お問合わせ</a> |
+          <a href="#">医療機器</a> | <a href="#">運営体制</a> |
+          <a href="#">診療科</a> |
+          <a href="#">サイトマップ</a>
+        </div>
+        <div class="copyright">
+          Copyright © 2025 東京第一クリニック All Rights Reserved.
+        </div>
+        <div class="d-flex justify-content-center gap-2 d-sm-none m-1">
+          <button class="btn-prim">料金表・診療時間</button>
+          <button class="btn-prim">郵送処方</button>
+          <button class="btn-prim">アクセス ・TEL</button>
+        </div>
+      </div>
+    </div>
+  </footer>
+</html>
